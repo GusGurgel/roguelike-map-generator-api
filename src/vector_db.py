@@ -3,7 +3,7 @@ from langchain_chroma import Chroma
 from langchain_core.documents import Document
 from os.path import join
 from utils import MAIN_PATH
-from tile import Tile
+# from api import Tile
 
 import dotenv
 import os
@@ -57,7 +57,7 @@ def create_vector_store():
     vector_store.add_documents(documents=documents, ids=ids)
 
 
-def query_vector_store(query: str, documents_count: int = 4) -> list[Tile]:
+def query_vector_store(query: str, documents_count: int = 4) -> list:
     vector_store = get_vector_store()
     tiles = []
 
@@ -72,6 +72,6 @@ def query_vector_store(query: str, documents_count: int = 4) -> list[Tile]:
             "y": int(document.metadata["y"]),
             "description": document.page_content,
         }
-        tiles.append(Tile(**tile))
+        tiles.append(tile)
 
     return tiles
