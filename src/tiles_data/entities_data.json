@@ -1,0 +1,530 @@
+[
+  {
+    "x": 24,
+    "y": 0,
+    "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAhklEQVQ4T62TQRKAIAwD5UlefYFP9gVeeZJOD3FqSBxBuTBD6SZtoUwfV1H5dd8OdT4va3O/OXDJADJEApRSAAL+GsBOIrELAMXYodoFGHKAJLYL5RxHU68mKsU8She3AK6d3wX60gBgXwFUzAJ43q4Pj085jy87yuXcAE7FTSdA/zoY+dkneGaUEWVgEUoAAAAASUVORK5CYII=",
+    "description": "A person wearing a hooded coat. Could be a mage. A person from the desert."
+  },
+  {
+    "x": 25,
+    "y": 0,
+    "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAdUlEQVQ4T2NkoBAw4tJ//tiO/8hyhlYeWNViFUTXDDMImyG0MwBkG8wlMDb9XADyM1mBiOxkbLGDTR4eiLhCHlc0w8IDxQCYIKFoBMnTxgCQc5GjD9356FELkscIA1xxDnM2ekDiTInoiQbZ38guo40BpORwAPdWcBF4nesZAAAAAElFTkSuQmCC",
+    "description": "A bald human being without standard clothing. Not wearing any accessories."
+  },
+  {
+    "x": 26,
+    "y": 0,
+    "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAfElEQVQ4T2NkoBAw4tJ//tiO/8hyhlYeKGpB8iAxrAaga4YZhGwIRQbALMDrApAkskKYjehepo0XQLaQFYjITsYWO9i8BPcCLhsJuQTFAFg0obsEHx+vASBvIBuKzQIMLyBHH7YEhDMaCcU5ejogmBJxpX2YC2hrACk5HAASD5gRxxkPeQAAAABJRU5ErkJggg==",
+    "description": "A bald tribal human carrying a spear in his hand."
+  },
+  {
+    "x": 27,
+    "y": 0,
+    "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAf0lEQVQ4T2NkoBAw4tJ//tiO/8hyhlYeWNViFUTXDDMIZghIHsamnQEgG2AugbHp5wKQn/EFIsEwIBSzWA3AZiO22EAPD3AsIJsIsx0mhmwItrSAYgC2UEc3AJ1PsgHoLiboBWQvgdhYw4BQtOEKJ5A4RlLGFqAkGUAoDaDLAwDfEpgRRTfELAAAAABJRU5ErkJggg==",
+    "description": "A human being with a sword and a shield. Possibly a warrior, but without armor."
+  },
+  {
+    "x": 28,
+    "y": 0,
+    "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAfElEQVQ4T2NkoBAw4tJ//tiO/8hyhlYeWNViFUTXDDMIZghIHsamnQHoTka2lWgXIDsZ5A2SvUC2AYRiFsML+EIdW3RiNQBXoCEbgC0tgKMRZiJMMUghsi3IXkI3kKABVHMBLtehuADdqch+xuUleFImlHkIGkAo7nHJAwBErJwRs4lVxgAAAABJRU5ErkJggg==",
+    "description": "A warrior in armor, carrying a shield and a sword."
+  },
+  {
+    "x": 29,
+    "y": 0,
+    "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAjUlEQVQ4T72Tyw2AMAxD6UhcmYCRmYArI4GC5Mo1+UggwQXakBfHadv08WlR/rFvJ8fmZe3/WgxrF6DJACHpHwBLNgWoqu+0BZZsEIXa3itA6UE12Qcgc90bpwvITIvOQ/eAnYVZXEVbgiorepuYAaIWUKgEoHqkaACwVE3gtTvG7PJwm/od3sbqLCB+AfSJqBHC/kfyAAAAAElFTkSuQmCC",
+    "description": "A warrior in armor, carrying a shield and a spear."
+  },
+  {
+    "x": 30,
+    "y": 0,
+    "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAgklEQVQ4T2NkoBAw4tJ//tiO/8hyhlYeWNViFUTXDDMImyG0MwDdNpCrSHYBTAPMS3gNQFeEbCM6GxQmMMPgYYAccLhCHJsajEDEFQO4YgLFBdgCDtm5MEOQvYTVAELpAKcBMNvwGYAe2BiBiCsAkZ2PNRaQ0z22RENyQqIoJZKSwwGOsXQRflvywgAAAABJRU5ErkJggg==",
+    "description": "A large, very strong tank warrior wearing armor. He is not carrying anything."
+  },
+  {
+    "x": 31,
+    "y": 0,
+    "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAkElEQVQ4T6VTQQ6AIAyTJ3n1BT7ZF3j1SZqZ1JSyAomcCGtL12Vl+XmK41/ncXNt3fYU+z0GASAlQ4jruFeqjqgu2U1qi92ArA5TBwyOu7Y0bIGtuh8Dw7U0A5c4iFZAw8pCDfFGoDc2rtkMZlJHqCr4ZsC9MdBlwa0OBaZb6M1dR9c4AKC3PFlOgbfbOLvlDy72nBHBbTZeAAAAAElFTkSuQmCC",
+    "description": "A warrior in armor carrying a sword and a shield. His helmet has horns."
+  },
+  {
+    "x": 43,
+    "y": 0,
+    "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAfklEQVQ4T2NkoBAwUqifAasB54/t+I/NYEMrDwz1GAK4NMMMRDcEbACyJpACfC5AVzuIDUD3K8jp6N4D8TG8AAoTZM0wP2MLGxQDsEURvjQCcxHcBRQZgB6V6N7AJ4/TBTAnwjTjClQUAwgFGLo8PBBhgYWsAFsAYpOnODcCAEdEjBFsGCmtAAAAAElFTkSuQmCC",
+    "description": "A car."
+  },
+  {
+    "x": 24,
+    "y": 1,
+    "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAk0lEQVQ4T7VT2w2AIAyUkfx1Akd2An8ZSVOTM8e1VdTIF4Heo0cpw8dVGF/XZbviG6f5qLc67E8CHPaQoMZIGgfKrm5YxDlAcebEAHp364CtqjuQpS1wUJH1kEAVowzsjNtpXoEBCImzwb6LAEroncEslDqIBooHCQIuRFaMAHrvRhn9RS1oLlbzygHPxD8ET374DgTnrBHLQGppAAAAAElFTkSuQmCC",
+    "description": "A wizard wearing a hood, carrying a staff in his hand."
+  },
+  {
+    "x": 25,
+    "y": 1,
+    "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAh0lEQVQ4T6WSwRWAMAhD7UhencCRncCrI+njEF+KodCntwr5QKAtP78W6a/zuDm2brvMlT+9GCCGWI69ww6yySQgquxhVnnYAYIAsgCwdITMxOEIkeOqo9fEmfnZkw6AytkauRMJqKzQcro78PMpiPLm4wFWlgFKd8AQCEp34JNNNAXITOT4A37egBGj3d/OAAAAAElFTkSuQmCC",
+    "description": "A farmer wearing a hat and holding a piece of wood."
+  },
+  {
+    "x": 26,
+    "y": 1,
+    "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAg0lEQVQ4T62TwQ2AMAwD6Uh8OwEjMwFfRqLKI1Jwr1FR6TONLTtOyrb4CuHv63yovtej6+8KDtbmUR0JDGwAItFaSmA2IoBIUwtR9pQFAvgw3ZaqeikgiZqG9mCMBtIoKULrQwXZHqQK/HOZINvuTwrct6YT5/H/LVACcRfU3jDG2Stv7M+AEbyJD1AAAAAASUVORK5CYII=",
+    "description": "A young woman wearing a dress and a hood."
+  },
+  {
+    "x": 27,
+    "y": 1,
+    "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAdElEQVQ4T2NkoBAw4tJ//tiO/8hyhlYeWNViFQRpRteATQxkAW1dAPMGyDUkuQDd/7CwwBYO1PUCspOxxQ42ebgLsDkb5mR8chgGwAIM5AJ0A7DJ4UwHuAxA9xpWF+BL3ejhgNcL6AaR5AWKkjJV8gKxuRwA54hwERC6evsAAAAASUVORK5CYII=",
+    "description": "A man, human. With hair and formal clothes. He is not carrying anything."
+  },
+  {
+    "x": 28,
+    "y": 1,
+    "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAe0lEQVQ4T2NkoBAw4tJ//tiO/8hyhlYeWNViFQRpRteATQxkAU4DsLkMmyvwugDmDZBG+roA5HyyAhHZydjCAJs8PAxw2YguDjMYFqB4YwGmCJ/LUFyArgFkG7IYNjaGF3ClOJjT0V2D1QB8/sZpAHKoUyUpU5QXSMnhAN9qcBG7tGnAAAAAAElFTkSuQmCC",
+    "description": "A man, human, with hair and formal attire. He is not carrying anything. He has a sash across his chest."
+  },
+  {
+    "x": 29,
+    "y": 1,
+    "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAe0lEQVQ4T2NkoBAw4tJ//tiO/8hyhlYeWNViFUTXDDMImyG0MwBkG8wlMDbJLoBpQDYIPcwwvABSjEsjshzMIBQD8NkE0oBNHm4AtpBHdwm2aMUwAFeAwZyP7grqGUBuisYIROT4RzcUm/dwpkT0RIMtCkEW0MYAUsIDABZFeBFsJUgEAAAAAElFTkSuQmCC",
+    "description": "A bald, bearded, hairy man. He's not carrying anything."
+  },
+  {
+    "x": 30,
+    "y": 1,
+    "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAhElEQVQ4T2NkoBAw4tJ//tiO/8hyhlYeWNViFUTXDDMImyEYBoA047INmxxOA7B5gSQDQM6GGQJzEUkGkOUCbDaCXILsAmQ+iA0PA0LRhksepwGE0hfMVdRNB/jSAMxF6GpQXACTRKbRkzNeA5BtwRYGRCVlWAJCV4zLezhzI6FYgMkDAAWvdBF7ww8uAAAAAElFTkSuQmCC",
+    "description": "A human wearing a hood. He is not carrying anything."
+  },
+  {
+    "x": 31,
+    "y": 1,
+    "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAjElEQVQ4T6VTwQ2AQAzyRvLrBI7sBH4dSVMTEmzp9VSf0iIFbNPPp2X7x76djM3L+pg13N5JAr8MIpAAlwRgVsqA8UxQwEP+BI+VCliqkfGXUw9GFDBZcNZAZRaWgAcFI7FxGvKELL5eH+4TfHSve+DdrtrdLRIrqnyx2U9VTmOEdFVn5VP6M1UeMH4BnDKcEZgKZaMAAAAASUVORK5CYII=",
+    "description": "A hooded figure holding a staff. Their hands are open."
+  },
+  {
+    "x": 24,
+    "y": 2,
+    "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAiElEQVQ4T7WTwQ2AMAwD6Uh8mYCRmYAvI4HyMLIcp1Ah+kLFvrhp06aPqzn/sW+n25+XNenTRmUGUCElQIUAvwK4qJEgIEMArToEYDG+HwFcUZsZ0V0f7iaygcXcfdXEvwSAWSvyMcKIZpYAFrmj/QMA1V2fJkoJ+KH0AHqV3WGqEvGgWcDIhF86LqgRUNGJgQAAAABJRU5ErkJggg==",
+    "description": "A wizard with a large gray beard, wearing a hood. He appears to be wise. He is not carrying anything."
+  },
+  {
+    "x": 25,
+    "y": 2,
+    "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAiUlEQVQ4T62TQRKAIAwD5UlefYFP9gVefZJOD3FKSBhG4STUpmFbyvJzFZd/ncedY+u2y3/lISdDSInMFciVoxr2+TvcZCdzHWRonyBmy6o7Kv5ewZF3bQaHSgCHIaYgcjzErYCqPCwQyT2IcNg4QI97k8ggG4i4O4+t4lI54BlwAszGvsbRV/4AuVd8EQJmPSEAAAAASUVORK5CYII=",
+    "description": "An elf, carrying nothing and wearing no armor."
+  },
+  {
+    "x": 26,
+    "y": 2,
+    "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAhklEQVQ4T6VTwRGAIAyTkfw6gSM7gV9G0uMRL5S0PZAXlDZNUijbz1W8+npfD9/txylzZdAWA0iBdABeoWXJQC6DlgRA7FMG6LQkoRVxh8hEzpUeMH02kCUh/gFkY/PuOwBIyDyQEji4DNB0eSxsHOfBA2VgZGT4kPgF2jEPU8iSpwBmfvgLCMV8Ed+CAIIAAAAASUVORK5CYII=",
+    "description": "An orc, carrying nothing and wearing no armor. Details on the shoulders. Appears to be stronger than a normal orc."
+  },
+  {
+    "x": 27,
+    "y": 2,
+    "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAh0lEQVQ4T2NkoBAwYtN//tiO/4ZWHihy2MRAenEagM1gkKEwg2A07QyA2QZyCbrNMNeBxEl2AUgzcnhgNQBdEXoA4jQAJIHuZGTD0AMQJRZgmmEGEBu9cC8gm44vbaEHLoYB6E7G5SWYOIoByIpxJSR0cbIMIBiNhPICXgOwRRW6GEEXkJLDAVFAtBG9F9uGAAAAAElFTkSuQmCC",
+    "description": "A demon wielding a trident. He is not wearing armor."
+  },
+  {
+    "x": 28,
+    "y": 2,
+    "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAiUlEQVQ4T8VSMRKAIAyTJ7nyAp/sC1x9klyHeKGkVM9BNmgakjZl+XhK1H8e+8W1tW431mq4SwIAQGJgbuL3kEApUyr+UZBaMPnes5dvGHvrLDCzmgEPd9iCWpvfAn6Va5xJ9pZYnQyHV4MG5IHvHQEkZukOLbDHWZAeR5lJuEnOIAO/IshmwPUGkEOcET8YzAMAAAAASUVORK5CYII=",
+    "description": "A horned creature wielding a staff. Simple armor with some details."
+  },
+  {
+    "x": 29,
+    "y": 2,
+    "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAh0lEQVQ4T62Tyw2AMAxD6UhcmYCRmYBrRwL1EOQ6dkGi3JrPU2KHsvz8iuuv53Fhbt12WSuD3BwgBekArpGnRNADUCNHrDW4lTpAkN9WaPmonS8i0nl3lZsvohIMbURhWzy5EAAEudgQoC6UoQnANo7eyUY+Gj7bcMBqgCNzEb+x1h7S17/8BrCQiBFlRlRKAAAAAElFTkSuQmCC",
+    "description": "An elf. He has no weapons or armor."
+  },
+  {
+    "x": 30,
+    "y": 2,
+    "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAhUlEQVQ4T2NkoBAw4tJ//tiO/8hyhlYeWNXCBUEaYIrQNcMMQpaHsalvAMx2kA342LRzAcy/+AIRObwwwgBZEj2GYHIEDcCXNGBhgxEGyJoIRSOyWrAXkDXgSjDYwgaklnrpAJu/kdMBrnDBmr6RQxukET3gMMIAV3ShByy28MGZG4nN5QAi65QRL6nhLQAAAABJRU5ErkJggg==",
+    "description": "A human swordswoman wielding two swords."
+  },
+  {
+    "x": 31,
+    "y": 2,
+    "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAfklEQVQ4T2NkoBAw4tJ//tiO/8hyhlYeWNXCBUEacClCtwRZLYqp6Lbich2yRVidBbMBZiBIAy4X4jQAm+3INsMMJDsQsRpATkCixALI2cj+xRYG6JZgjUZsLkEPWJhlOA3AF4jILsPpBUKxAJMn2wC80YgvDGA209YAUnI4ACukkBELZXVwAAAAAElFTkSuQmCC",
+    "description": "A man wearing a hat and holding a piece of wood."
+  },
+  {
+    "x": 48,
+    "y": 2,
+    "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAgUlEQVQ4T51TQQ6AMAhzT/LqC3yyL/C6J2k4kDQVms7d2EYppYxNnHlfTz7vxzmqr+VlfMRkBWIBRPUArFhYAEidQT4AWInbkAxYMCc5mLUMfovYidVNu2SgvLEkYvpheYydoJYPWIOMbSNxAsaVpaWRUAN7CrxI3De30u6CGiW+vTYtdBGfJb7UAAAAAElFTkSuQmCC",
+    "description": "A person in a wheelchair."
+  },
+  {
+    "x": 24,
+    "y": 3,
+    "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAi0lEQVQ4T7WTyxGAIAxEpSSvVmDJVuCVknRyWGddNsKMygWGZB/5kDK9XCXT13072DYvq/W1lyoGyEH+A8RriATnbgQhYKHWx4GuFFiMlziCgDmfBsCOHAHEar8BwjiSAvxit4Cnv6VppSk4CNcG528BXAPtubbYRsDF6c1IA8hahntuI/um0zg65Sd8AJQRM5kN6QAAAABJRU5ErkJggg==",
+    "description": "A very strong human being, unarmed. Big arms."
+  },
+  {
+    "x": 25,
+    "y": 3,
+    "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAiElEQVQ4T7WTQRKAIAwD5UlefYFP9gVefZJOD3FCbEBH5cTQdhtCKcPLVVz9ti47x8ZpTnPTQy0GKIP8B4huUIL9YwUoYJB69r2J0c05nsUqBc59lc0NTgDoDFEPAqSGXgCR1JsDvkoFyDpAviqEOqugNQepAjaqdwXOtXPAXrhnjZwm4M5PPwAdgHgRGrR40gAAAABJRU5ErkJggg==",
+    "description": "It's a human being, but instead of legs it has a wheel. It looks like a unicycle."
+  },
+  {
+    "x": 26,
+    "y": 3,
+    "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAhElEQVQ4T62TuxGAMAxDyUi0TMDITEDLSHAuxDlGsvmlTKznSHHa8HE1pd/WZfdn4zTTWroZxQAxSAcwoRVlANQAKm8Qu0VhCWDZlBa86FWIEKnE2fmZgQpOPTOadADfObPgA6WAag4kwK6r/MNKzOGSwZ1B8o3+HyTvH3bYXjqJT374AZWwbBHPUaIfAAAAAElFTkSuQmCC",
+    "description": "An orc with a hat covering his eyes. He's not holding anything. He seems strong."
+  },
+  {
+    "x": 27,
+    "y": 3,
+    "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAjklEQVQ4T6VTwRGAMAyyI/l1Akd2Ar+OpJcHXkoh9s4+G6CBpG35eZrjX+dx59q67RIrL5kMISXSCQQxQJUAMBB9BXKBQQF29U4ggOiA2+XuUJcW8KIK0VrIJJc4ssn1wcLsWgwWOCQlBFLGyilUGfBE5BQqG5yDHaOzYAUy4WuRMtb+BbdI3Jn9jbPjfAAIFYgRRcOAhgAAAABJRU5ErkJggg==",
+    "description": "An orc with different armor, he looks extremely powerful. An orc chef. A faceless giant. A specter creature."
+  },
+  {
+    "x": 28,
+    "y": 3,
+    "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAc0lEQVQ4T2NkoBAwYtN//tiO/4ZWHowgGiQPY4NodPU4DcBmMNEGkOIr2riA4jAAeQFmCDobbyAihzqu2IHFCkweHgYwzTAJ9BDHJY9hAHr8w7yAnB6QXYHXAHRvYDMcazSSnQ7Qow+XC5DDZxAnJGLDAQAKUXARICZsQwAAAABJRU5ErkJggg==",
+    "description": "A human king."
+  },
+  {
+    "x": 29,
+    "y": 3,
+    "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAgUlEQVQ4T61TQQ6AMAiTJ3n1BT7ZF3j1SRoONVihwbhdWFboCg02/TyW1R/7ds7Lah4dx90j55cEGXGLAL8rZRF7KGDpTJK1UhJUM2CFYxVEyXAAb9kAHXspgG3VEBm/CdjzmKiwcQSqfzWH1AW1HtJGFLIDnxR0ljNami5ThwQ5F8rnhBGKrUTeAAAAAElFTkSuQmCC",
+    "description": "A human queen."
+  },
+  {
+    "x": 30,
+    "y": 3,
+    "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAa0lEQVQ4T2NkoBAwUqifgXYGnD+24z+y6wytPLBahlUQpBldAzYxkAU4vUAVF8AMAbmGJBeg2w4LC2zhQH0v4HIqyBXY5FBcgMvp6IkN2SsYBsACDFsKxRaY1E2JMD/iiwX0cKBdSiQ2lwIAuqFQEYFFDxYAAAAASUVORK5CYII=",
+    "description": "A human child boy."
+  },
+  {
+    "x": 31,
+    "y": 3,
+    "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAg0lEQVQ4T2NkoBAwUqifgfoGnD+247+hlQcjiEZ2HUwMRCOLwzkwDbgUohsMMwjFNJgikA3YXAATR3YF1jDAZhuy4Vi9gCyIbjtMDt3/IHGcsYDLC+jRjmEALqdi8z+GC/AFHHqUwvhYYwFfGKC7kDYpEV/+wJkS0aMRXSFJ6YCUHAoAS+pkEbWc0r0AAAAASUVORK5CYII=",
+    "description": "A human child grild."
+  },
+  {
+    "x": 48,
+    "y": 3,
+    "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAgklEQVQ4T2NkoBAw4tN//tiO/zB5QysPrGpxGgDTDNIIYpNtALILsRmC4QJk20jyArpiYjSDXIfTBRQbgOx3kgMRm+3IsYJsON5ABCnEFqjIsYFiAC6nwsSxuQKnAeg2wxIUesokyQXYkj1JYQALExANCweseQFfGkAPB7y5kZicDgC9aHwRonGoMwAAAABJRU5ErkJggg==",
+    "description": "A person in a wheelchair."
+  },
+  {
+    "x": 24,
+    "y": 4,
+    "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAhUlEQVQ4T62TQRKAIAwD5UlefYFP9gVefZJOD3FKSCmMcpKxWRJayvJxFdZf53H3mOu2V5pqAzEXAaj+N4BI7CG+RgL4JL+37yGAFSnhMEBdJKCpAxNzNyAKHXhB1gU7ADXvJXLeXoRpgM/OHWomUeWHGxWtOwccI+1CNG1wlTr4DTDzwh/Q6ZQRlo5QoAAAAABJRU5ErkJggg==",
+    "description": "A person wearing a hood. Appears to be an Eskimo wearing winter clothing."
+  },
+  {
+    "x": 25,
+    "y": 4,
+    "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAeElEQVQ4T2NkoBAw4tJ//tiO/8hyhlYeWNViFUTXDDMImyGD1AUgL4CcC/MKjE2yF2AaYAZiC3CUMEC2EaSYEB+kBm4AoWjDFjMgF6IYgOxkbM5FlyfbAGTDMbyAK8XBNKGHC1YDCKVE5FjBmZTRXYKsifYGkJLDAZEIeBFPeRGuAAAAAElFTkSuQmCC",
+    "description": "An old human. An old man with a cane."
+  },
+  {
+    "x": 26,
+    "y": 4,
+    "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAeElEQVQ4T2NkoBAw4tJ//tiO/8hyhlYeWNViFUTXDDMImyF4DYBpgBlIlAG4bMflCpxhQGzYUjcQ8fkV5CJs8nAXYIs2fOEBC1AMA0ASyDYhG4IuB3IVVgPwBSC6N6ibkECmw5yJnmhwyVE/JWKLLpKSMrEpEKYOACQ7ZBG0UmFAAAAAAElFTkSuQmCC",
+    "description": "A police officer. A government agent."
+  },
+  {
+    "x": 27,
+    "y": 4,
+    "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAjklEQVQ4T6WSwQ2AMAwD6Uh8mYCRmYBvRwLlEeQ6cRsJXtA658SkbT+fpur7fT14tx9nqh0OrUgJHcaaQGVn7pAN5AjVaFKAt+ndmKsaTwKyDrJ8QohWyI5ZR27wAVbhqTAHgLeYzYtn+C4BswwkAOdXAPwzpgkZVDbRjQYAOrILf6N2ukgMXe5BdX1R9wKI1XQRvR/cDwAAAABJRU5ErkJggg==",
+    "description": "A cowboy. A rancher wearing a hat."
+  },
+  {
+    "x": 28,
+    "y": 4,
+    "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAg0lEQVQ4T6VSyxWAMAizI3l1Akd2Aq+OpI9DfBhCRdsTryn5FNo0eFrWf+zb6bF5WeXbcGmN2WOFSVZWhxNFnEaofk3qwNTgBHXZwe8IrMhT8DiwO8Lb2DL8QYCMrKSUMdLPBEwWIvDvW1blCG67BLwLPmIgqC4OHHUJ1M77O18Pr/IFR+qAEXdzR7wAAAAASUVORK5CYII=",
+    "description": "A cowboy. A rancher with a hat and a cane."
+  },
+  {
+    "x": 29,
+    "y": 4,
+    "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAdklEQVQ4T2NkoBAw4tJ//tiO/8hyhlYeWNViFUTXDDMImyG0MwBkG8wlMDb9XADyM1mBiOxkbLGDTR4eiLhCHlc0w8IDxQCYIKFoBMnjNYBQGOA1AFkS3fkwOawGwBRjU4RNDKYeIyVSzQBc0YieGnHmRmJzOQBcbHwRaxYBpAAAAABJRU5ErkJggg==",
+    "description": "A bald human wearing a cape. No armor, no weapons."
+  },
+  {
+    "x": 30,
+    "y": 4,
+    "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAbklEQVQ4T2NkoBAw4tJ//tiO/8hyhlYeWNViFQRpRteATQxkAW1dAPMGyDUkuQDd/7CwwBYO1PUCspOxxQ42ebgLsDkb5mR8cigGoGvAx4fJUdcAkL9hUQZjg2j06ESWwwgDsg0gN0/RLi8Q6yIAmqV8EZKOhKMAAAAASUVORK5CYII=",
+    "description": "A human with hair wearing a lab coat."
+  },
+  {
+    "x": 31,
+    "y": 4,
+    "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAhUlEQVQ4T7WTwRGAIAwEpSS/VmDJVuDXkmTyOOeIlyA68mJIbhMuUKaPq0T6Y99Ojs3LKnPloRcDpCD/AawaOsF+uAMIGOQ9C020xEwIUAPoCVT8AqixeQ/UWBsA3zkz0cDITQFckUUhwATRyCDyPtw8eA3w7ao/MvSQfDLfm+HpQ3ry0ytD14gRXOYddgAAAABJRU5ErkJggg==",
+    "description": "A bald, dark-haired man with a beard. He seems to be a priest, a bishop, a person from the church."
+  },
+  {
+    "x": 24,
+    "y": 5,
+    "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAkElEQVQ4T6VTQQ6AIAyTJ3n1BT7ZF3j1SRpMRrpaKkZOhHWl67Yy/Twl8o99OxXXvKwNo+J3kJMjKd4dSSOooJqAYCTokSUClOhU4SeyPlYSZapSugSjhiaCN9NUPLWR3WcVGI+79YC7YD1A16OlqIDfkoJey7gEhbOT+IlAGaQIGPfoghoiXDgeebtpI5t+Af+7kBG3s6YFAAAAAElFTkSuQmCC",
+    "description": "Scorpio."
+  },
+  {
+    "x": 25,
+    "y": 5,
+    "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAiklEQVQ4T61TyQ2AMAxrR+LLBIzMBHw7EihIrnJZVAp82gJ2Ysftrfj0Ir5NgnGd97Yf71n2GbH+jv0EyAsPZIT4V9YggVVHRyDFOUhYIdBygwRfwXsBMNb/JHj3taneYN2lkYB2v8aIYnMKGrDigZ5IGhxGkuUkEGRpYyk1QWIpZL6YKFcuVPk2PjHOgBGJXFPhAAAAAElFTkSuQmCC",
+    "description": "Crab"
+  },
+  {
+    "x": 26,
+    "y": 5,
+    "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAi0lEQVQ4T61TwRGAIAyDkfw6gSM7gV9H0qt38UJJHgq+kDYhbdpaBr86iC8vwXnsV5At6/bp7kkOMIA4gxAKI67yOoJMCAIGc44lUL3J5cX/HAVKtuqBKqexkUEsFw9wQ3G2ljkF2e6mB6rTajbY0q4EBJ0L+ZGmhDxMTKKGKOJ2FxwgK5u3TH+38gYn4KQRAksTxAAAAABJRU5ErkJggg==",
+    "description": "An insect with wings and claws. It looks like a cockroach. A wasp, a bee."
+  },
+  {
+    "x": 27,
+    "y": 5,
+    "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAhklEQVQ4T2NkoBAwUqifAW7A+WM7/oMMM7TyAIvB+DAL0MVhfAwD0DXA+LgMRPECSBHMZGRXoIsh81FcAJJAtgmbd2BqsHoB2QBCbJwGEPIzzGu0cwF6QCKnE5gcshqMQCTLC+ghjx7nyGkDXS1KqkOONmyxgC014k3K6AZiS1zUy0zk5koA2LOwEdcpOokAAAAASUVORK5CYII=",
+    "description": "A turtle"
+  },
+  {
+    "x": 28,
+    "y": 5,
+    "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAmUlEQVQ4T61TwRGAMAizI/l1Akd2Ar+OpId36YU0+Km+SoU0JNCWya9F/XUe97rt7xmxw9WciDtAFMRFgKFYY81JAEBngAqUWXfajn7FgNv7bKHSASxtC07USugBgN1wWjAQcpONuNRidQXalAx+AWAH+EVm2RmwhZzMLmgh/qU5UBF5uNw5QEqAasd0b+wk8tK4NoZJnNnoB1XS2BGUY7IHAAAAAElFTkSuQmCC",
+    "description": "A warrior spider."
+  },
+  {
+    "x": 29,
+    "y": 5,
+    "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAjElEQVQ4T61TQQ6AMAxyT/LqC3yyL/DqkzQ1wSCjNVF3WtbCGGVt+Lhaht/WZefaOM2293YYoGhUMIhQYzLLWhGo4ovg6fZMxUkAMPaVr5APzP8EqghqWCX3dFOIopsEn9kpqA8KcPW4rJtCZaQaWBJo8h4VsDGaCU6gmpkmsVLAOSk/k3tzGuW3v/oAjZyoERauP+oAAAAASUVORK5CYII=",
+    "description": "A simple, hardworking spider."
+  },
+  {
+    "x": 30,
+    "y": 5,
+    "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAi0lEQVQ4T7VTQQ6AMAhzT/LqC3yyL/DqkzSY1HRQMHFxp4WN0lJo0+BpnH/s2zkv6x2zO79xHHd7fwCqZAApkI4BKnOFjCHiAUDR9wwYNEhg7aofFmO5JYAySAIwYtaH7E+w0QBQxdsIef/Y6OeAWXjdZRNBO5tE36N0EocZVDsmJbyNMUuTLnzd6gtB1awRvJC7qQAAAABJRU5ErkJggg==",
+    "description": "An insect with multiple legs. It resembles a spider."
+  },
+  {
+    "x": 31,
+    "y": 5,
+    "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAd0lEQVQ4T2NkoBAwUqifgfoGnD+247+hlQdWg7HJoSjEpxnmVXQ1GAaAFOJzAbo8VgNgikC2obPxGgCSxKYJ5CJkceSYwxkLMA0wxbi8hTe00V2DzRAMA5BDGd3ZBKMR2W/oBpHkBVhgwjThSx/UT8qkZi6KXQAAmI9cEd5/Hu4AAAAASUVORK5CYII=",
+    "description": "A fairy. A small being with wings. A flying creature."
+  },
+  {
+    "x": 24,
+    "y": 6,
+    "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAfklEQVQ4T2NkoBAw4tJ//tiO/8hyhlYeWNViFUTXDDMImyHUNwBmO7ptuMQxXABSiMu/2OTwGoBuK1EGwAIMWTE+V1E/GmG2YUsHBL2A7GdcBoC8iBzIKF5Ath2kCN1AmBhOA5ADENkmXGkApAanC7DlEZJcgC0lEp0XSMnhAGevfBHWGbMmAAAAAElFTkSuQmCC",
+    "description": "A gnome with a beard and a hat. A small person with hat and beard."
+  },
+  {
+    "x": 25,
+    "y": 6,
+    "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAhklEQVQ4T8VTsQ2AMAyjJ7FyASdzAWtPovJgFFK7SIBExzRx7MQp08tXXH3dtyP+zcsqc2UwFxNIgVwAUIikEQBzCNoxYHHu5uISwOnN3cHCDhGfrmscrpWAJDKJM8nsvt8COysfKEkng0wzDkytl1I6APog+sHF7Bb+dSL3r5x4ewtPLrsBxmd8ETW1l/4AAAAASUVORK5CYII=",
+    "description": "A gnome with a beard and a hat. It appears to be a warrior gnome with different armor. A small person with hat and beard."
+  },
+  {
+    "x": 26,
+    "y": 6,
+    "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAgklEQVQ4T2NkoBAw4tN//tiO/yB5QysPnOpwSsA0wyzAZQhtDEC3HZ8rsLoAZADIychhABNDDzMMA3DZjssVKAbgCjh8AYphALrTQTbj8wrcAHRFyPGPTw7FAFhcE4oF5ADF6wL0EMfmPawGIPsbPfTRkzdRKZGsvIDuCpLzArG5HAC+gnQRigtUygAAAABJRU5ErkJggg==",
+    "description": "Ghosts, poltergeists. A ghost with a pointed head. A spectral creature."
+  },
+  {
+    "x": 27,
+    "y": 6,
+    "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAgUlEQVQ4T2NkoBAw4tJ//tiO/8hyhlYeWNViFUTXDDMImyG0MwBkG8wlMDb9XADyM8h2mI3IbPRARwkDXCGPL0bgBuAKeVzRDHMdigHITsamEZuXqGsAyFbk6EN3BXrUguQxwgCXN9DFMcIA3TbkQMWVD1BcgC3QiDEEZ24kNpcDAC6jaBEVbFnTAAAAAElFTkSuQmCC",
+    "description": "Ghosts, poltergeist. Ghost with a pointed head. A spectral creature. To be a ghost of a human being."
+  },
+  {
+    "x": 28,
+    "y": 6,
+    "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAiElEQVQ4T62T0Q2AIAxEZSR/ncCRncBfR9LUpOY47kgI8gW0fb2WUpbJVVz8dR432tZtl77ykoMTpCD/AzJ7ZHN7LK1R4OS7MioABnO9zvYBesGZXflYQDinitxbgGqWmw9u7qsAAXhmCCoKW5wrQF72BonLaHqAEpUCVmsnUT3j0ChPAUZ++AMmGHwR7o1l3wAAAABJRU5ErkJggg==",
+    "description": "A monster with a big mouth. Big head. Big trapezius muscle. It's screaming."
+  },
+  {
+    "x": 29,
+    "y": 6,
+    "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAgUlEQVQ4T2NkoBAw4tJ//tiO/8hyhlYeWNViFUTXDDMImyG0MwBkG8wlMDb9XADzM7ILcAU2ShggBx66c3HJwQ3AFfK4bIZZgGIALluxieM1gFA6AMljNQDkXGTbsAUiuhhGGMAMwJWUcRqAHFjITkSOUpISEr6AQ7YMZ24kNpcDAFIJbBEPDyPOAAAAAElFTkSuQmCC",
+    "description": "A skeleton without weapons or armor."
+  },
+  {
+    "x": 30,
+    "y": 6,
+    "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAjklEQVQ4T6WT0Q2AIAxEZSR/ncCRncBfR9LU5MjRXlECn0f7StujLJOnqPzrPG6lr9se4quAJAvqATjOirwATgCAQUqzPNNTQNaCLyYBvbl+AkaWIlsAwE9cDTYAkGTBCsD3cohTAE9HBbVmaLKFzEQ8GzZTs0ZvHt6Icmp9QRb4Rw+fw3sdkEyXv3HETA83CaARTUY/UgAAAABJRU5ErkJggg==",
+    "description": "A large, strong golem with a square on its belly."
+  },
+  {
+    "x": 31,
+    "y": 6,
+    "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAj0lEQVQ4T7VTQQ6AIAyTJ3n1BT7ZF3jlSZqZlHR1AxODJ8K6tnSzLD+/EvXX87ii+3XbX3h3YY0G6hEAA4GUQNWYnGtzHJg9tpqdDdcc8LuRA6xG2aD2EGhoUdoZzhGwYm+MEDT8HILRcqYOrPHLIkGgPYED0gkArJNwU1DLuq66F4xPf6ZslVUsJBiFyPUb6y6gESOmyVwAAAAASUVORK5CYII=",
+    "description": "A large, strong golem wearing metal armor. It appears to be quite powerful."
+  },
+  {
+    "x": 24,
+    "y": 7,
+    "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAgUlEQVQ4T7VSsQ2AMAyjJ7H2Ak7mAlZOogqSkZXaMKB0quLEdR23xZzz2C+G1r411SqLMZwHVC0IJwLXGM0KqyPg13CvVfDlusNvD5zrb2vEjCVw+UBdEkCmCw3jNQTOjyyb+yYPeOfZRJWNJ4m8pvDABQmk8MlG+VcS8ytZHX9tAM+wvBEHt2D3AAAAAElFTkSuQmCC",
+    "description": "The specter of a person. It looks like a transparent person."
+  },
+  {
+    "x": 25,
+    "y": 7,
+    "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAgElEQVQ4T6WSwQ2AMAwD25H4MgEjMwFfRgLlYZREjmLR/lrVV8fuHItrLuqHBLiv88FD234ETQvwYgaRAfZyhtmZDPg1ArOfQZ8Du4yAIMyBmdjfs30AKJWWLVRpezfMWekgp+733kVogdWEsarPRGtU0gdY+gesDRnQNdM66AAveS1QEcLO4AEAAAAASUVORK5CYII=",
+    "description": "A duck."
+  },
+  {
+    "x": 26,
+    "y": 7,
+    "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAgUlEQVQ4T6WTwQ3AIAwDy0j9doKO3An6ZaSiPFJZVhKD4MMHXxwntGPztBl9f5/vvO7wrQS42G4rxiAJMJGL3S1ClgAmZCcSwNW5jRIQiVMAJp0Fhnl4Dr+DrBqPOZ1C1iu6iZyVDjj1EhDNGwNDh3IPqjyWN7H6B+ZQLpL6bNuAAXrRWBECAfbWAAAAAElFTkSuQmCC",
+    "description": "A hen or a rooster."
+  },
+  {
+    "x": 27,
+    "y": 7,
+    "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAiElEQVQ4T6WSUQ6AIAxD2ZH89QQe2RP465E0M6kpA5YS+DFE+tats7J4bFFfJMB9nc+2H4YvF00BLhg5dKD/kx0wCGIJABfcArfyO+A+UQ2irI0P0BMr6XiBBhCnzYNkR9UQR/ajOx4eHFYpZLG5YAoQ7faWqIkxPuL7FKC3uhJAiS6+kVY5A78qrIARG+ehIQAAAABJRU5ErkJggg==",
+    "description": "A cow or a bull."
+  },
+  {
+    "x": 28,
+    "y": 7,
+    "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAcklEQVQ4T2NkoBAwEqP//LEd/w2tPBhhNLIevAYga4RpAhlEkQEgzciG4HQBuu3IXkD2CtEGYAsrkKHUMwBbgKHbCvMGcjiAXUCMZvTAgxk+RAzAlQpB3sDwAnIiQY5vbMkYbgAsQNDTPP0NICZnoqsBAMi/mBE/BnQ2AAAAAElFTkSuQmCC",
+    "description": "A horse or a donkey."
+  },
+  {
+    "x": 29,
+    "y": 7,
+    "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAfElEQVQ4T2NkoBAwUqifAWzA+WM7/htaeZBlGFwTuYYQdAE2g5HFUJwNkkAOE5C30MVg8jAvw12ALTApMgCmGZshyHI4XYCuEeZkZC+BxIgyANkwdDZRYYDNAKICERSwhBIYSkIiNlkjG4o1JSInFPSEhM4nK/0ju5RiAwDtJXgRGBE2BgAAAABJRU5ErkJggg==",
+    "description": "A pig or a sheep."
+  },
+  {
+    "x": 30,
+    "y": 7,
+    "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAfElEQVQ4T2NkoBAwUqifAacB54/t+G9o5QGXR+fDLMZrALrrkA0kygCQBpjNRLkAWRGIDbIFZgiMje4qFD+iK4IZgkszSBxnIJEciNg0kBSI2PyMLY2gxwRKNCKHOK4ERpIB6NGILTCxJiR07+CLSoJJmaSERE7Gojg3AgBvUngRXwGgtwAAAABJRU5ErkJggg==",
+    "description": "A cat.A cat, a feline. A jaguar."
+  },
+  {
+    "x": 31,
+    "y": 7,
+    "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAjUlEQVQ4T6WS0Q2AMAhEy0j+OoEjO4G/HUmDyTUH0tJYf2qq944DpCw+sqgvKaBe560m234Iv8M4BeiPKlRAVO00gMUMa4CoPIhQAZ+I9QIgxiW78TcfQSsxAJ8zEyuwAVg8IzRT4C6PxFHETxOzxfIxzRgjdywQn2wSAqJmTgF6I/V70K0gy/97lUfgB9GTaBF8NXsNAAAAAElFTkSuQmCC",
+    "description": "A dog. A fox. A canine."
+  },
+  {
+    "x": 24,
+    "y": 8,
+    "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAeklEQVQ4T2NkwAHOH9vxH1nK0MqDEZtSrIIgzegasImBDMQwAJdCkGJscsPJAORQxxXi2NSAwwBfwOGLZpBF1DUA5kRCXgDJw1yN4gKKDSAUHshhhdUFyAZgyws4DYBphIU4sh9xGQoLJ5xJGZttROcFZJdgcx1y2gAAvlCwEeq5syQAAAAASUVORK5CYII=",
+    "description": "The specter of a person. A person without a face. A transparent person."
+  },
+  {
+    "x": 25,
+    "y": 8,
+    "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAiUlEQVQ4T7WT0Q2AMAhE25H8dQJHdgJ/HUmDyTVXPFoTYr8MyKN30FqSpybrSwg4j/1i+LJu8l8Z9MUAKcgDsAJOfgGgpgEMBAiSAFmcm3A8BChzuQEaSgBkRSa+buB9mHnActoUvO5oP7wf/wCU6xyTEti4EYDHbd9ykZSpfgu7RZqNbZRPv8YbvzykEYBYPrgAAAAASUVORK5CYII=",
+    "description": "An octopus, an alien, a creature from another universe."
+  },
+  {
+    "x": 26,
+    "y": 8,
+    "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAZ0lEQVQ4T2NkoBAwUqifYRAbcP7Yjv+GVh5gFyKz0b2M4gV0TciKcRkGNwCkmZQAhRkIdyK6ZpACmKHIbHRX4TSAGNeADMZqADYbcYlhhDIsINHDBGYAemDiTEhkRSMx/sabDoamAQBUfFARyMv0uwAAAABJRU5ErkJggg==",
+    "description": "A bat or a little demon. A flying creature."
+  },
+  {
+    "x": 27,
+    "y": 8,
+    "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAY0lEQVQ4T2NkoBAwUqifgXYGnD+24z+y6wytPLBahlUQXTPMIGyGUN8AXLbjcgWGC6hmAMi/MMPQ2ciBSz0XYHM6LNTxycFdQMjv6CkWZjiKF4g1BDk94EzKFKVEUjIYxZkJAAIuOBEAaP3nAAAAAElFTkSuQmCC",
+    "description": "A slime, a small cone-shaped creature."
+  },
+  {
+    "x": 28,
+    "y": 8,
+    "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAiElEQVQ4T2NkoBAw4tJ//tiO/+hyhlYeGOqxGoCsGaQJnY9sMNgAkAJk07HZjqwJWS3cAJACbE6EWYDXAGRFMEOIdQWKC8hxBdYwIDZmQK6FxwK+kIYZiO4tuAHExjlJBqCHBy5LMMKAUOijRydGSiTWAFh0E0zK2GIEIyWSEm3oanHmRmJzOQCoKWARkqD6nAAAAABJRU5ErkJggg==",
+    "description": "A snake, an eel, a serpent."
+  },
+  {
+    "x": 29,
+    "y": 8,
+    "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAi0lEQVQ4T6WTyw2AMAxD6UhcmYCRmYArI4FSKZWbOh+JXjg0dsxL2rafp1X1z329WLsfZ9eWDVSMRmJCDWw3FWtXvV8MPKGNTg0qYstrSmD/zYOL3QdERhgLrQjNO8QImtxJVO8bGmQ74jLIhDjWNEEUn0Jky8ISKZOxiWyM0W7Qt1DdhWWMVWis7gOtfnQRWngbBQAAAABJRU5ErkJggg==",
+    "description": "An alligator, a crocodile."
+  },
+  {
+    "x": 30,
+    "y": 8,
+    "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAmElEQVQ4T6WSwQ2AMAwD6Uh8mYCRmYAvI4GCZOQ6cVUJXqVJL4njtvz8Gr+/zuOO/3XbG86I812ccZ8A1WOFWEAkamWdkB9HrOuAAdoyj8dQC3Da2g6ighOq6gygtwOeu4K47URuAmCNWrUS2AIYAi2q7QwBMwZNgJGJnCM7DaCsM5PGyxFmrMzdfEbSValhnE+SE2fE45wHMA6YEW9/0SYAAAAASUVORK5CYII=",
+    "description": "A large bear."
+  },
+  {
+    "x": 31,
+    "y": 8,
+    "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAgUlEQVQ4T2NkoBAwUqifAasB54/t+I/NYEMrDwz1KAIwjdgUggwEyaPLwQ3AJkmM98AGoGsm2QswA3BpRHcJsjfgLiDGuchqYIYQZQBMMbZAJmgASDO6RmQ+3lggFDYgw1FiATk2sLGRDUQJA0IBiC12iDYAXTPOlEjIFbjkKc6NAER9ZBFeNZaMAAAAAElFTkSuQmCC",
+    "description": "A ferret, a rat, an opossum."
+  },
+  {
+    "x": 18,
+    "y": 9,
+    "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAdklEQVQ4T2NkoBAwUqifYTgZYHGz+D8oPE6o9+L1Fro6uGKYBD5DsKnBsA2kCOQKZMUwQ2FyyDGH1bnommEasHkPqwvwpQ10Q/AagOwVGJu+BiDHCK5oRolGbKGPHB4w5yPHBk4DsIU4chTD5HGmA2wxgS0dAACdVGgRXzgicwAAAABJRU5ErkJggg==",
+    "description": "A strange creature with ears, it looks like an alien."
+  },
+  {
+    "x": 24,
+    "y": 9,
+    "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAfUlEQVQ4T2NkoBAw4tJ//tiO/8hyhlYeWNViFUTXDDMImyG0NQBmI8xFJLuAbANAfiY5EJE14ApxbGrAgYgr1AklEZBFKAaABAgZhqwGxQB0ZxMKA5A8dQ1ATm34UiJ6QMJTInJigTkPORBhYuiJCmdSxhYmRKdEQtGHLA8ApUV0EUZyWIgAAAAASUVORK5CYII=",
+    "description": "A cyclops. A creature from another planet."
+  },
+  {
+    "x": 25,
+    "y": 9,
+    "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAg0lEQVQ4T61TyQ2AMAyjI/FlAkZmAr6MBDJSUDA2KiJ99XBs52gbfq7m4rd12fPbOM0SKy85OIgUST1BqEPN7XNqdQ6yGhRcERl3OuituMJJApBGxV1HAnMj4KCe8ysBO1GEjxTcxEXrckrAXm1UPecx59nAe90cZDW44VTUnXXw5Ycfoal4EbnX1esAAAAASUVORK5CYII=",
+    "description": "A giant, very strong human with a band across his chest."
+  },
+  {
+    "x": 26,
+    "y": 9,
+    "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAdElEQVQ4T2NkoBAw4tN//tiO/yB5QysPnOpoZwDMdpgLcbkCpwsoMgBdMz5XYLgApBmXc7HJYfUCRS4AORdmE3I04nIZXhfAvIIvPVA/HeCyDZc4iguw+R0WJrAkjR4WeA1AzyegMMFrAEwDthAnKRZIyeEAnOFkEcphGfcAAAAASUVORK5CYII=",
+    "description": "A gnome with a conical hat. Small person with a hat."
+  },
+  {
+    "x": 27,
+    "y": 9,
+    "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAfElEQVQ4T2NkoBAwYtN//tiO/9jEDa08MNRjCIA0Y1MIMhCbHE4D0F0BMpS+BsCcDKJhXqK9C5D9jR6QuOTggYgr6nAlE5gF1DUAOaqQAwzGRqdBrsNwAcwQXCkR5lWcXsCVYJBtR45anHkBWywQlRdwpXlceQSrC0jJ4QAZApARQAPBJAAAAABJRU5ErkJggg==",
+    "description": "A creature with a hood, or insulating clothing."
+  },
+  {
+    "x": 28,
+    "y": 9,
+    "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAbklEQVQ4T2NkoBAw4tJ//tiO/8hyhlYeWNViFUTXDDMImyE4DUBXDDJ0iBmALXAJegEWeDCFhPggS+CBiCvkcUUzzBLqGgAyFRZdyNGGLoYsh+ECmCG4AhE9XHAagCsh4TQA2UZsqY6+KZGUHA4Aqf58EVsuw5gAAAAASUVORK5CYII=",
+    "description": "One saying, a person with a pilot's hat, an astronaut."
+  },
+  {
+    "x": 29,
+    "y": 9,
+    "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAfUlEQVQ4T2NkoBAw4tJ//tiO/8hyhlYeWNViFUTXDDMImyG0MYCUYMHpAnTngrxF0AswRfjCAN0gFBfg0ojuJWSXwA3AphmmEJ8chgHIpsM04hNDMQCfjSBvIMvD2HhdgC060V2F1QBCsYDsGuqmA5iTsSUaohISKUkYphYAucRoEadNKTYAAAAASUVORK5CYII=",
+    "description": "A creature with different armor. Horns on its shoulders. A helmet with a visor."
+  },
+  {
+    "x": 30,
+    "y": 9,
+    "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAh0lEQVQ4T62TwQ2AMAwD6Uh8mYCRmYAvI4HyMHITJ2oFfVVNcrHTti0fV8vqr/O4fWzd9pAvAarYYMOAGVepAusGJdgPK/jFgoeo7ma1s8CS1RxU/AWojn4GDIWiAFDDQ6GPdRasG6isRhVxrlRQvQM/h9KCesopgJNZIs7VWbjGKnkKMPMXHlMPdBHfGaq6AAAAAElFTkSuQmCC",
+    "description": "A policeman, a military man, a soldier. Uses a coil. A general."
+  },
+  {
+    "x": 31,
+    "y": 9,
+    "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAjElEQVQ4T6WTwQ2AMAwD6Uh8mYCRmYBvRwLlYcm4Tiiizyi+OnHblp+nOX0/j8vV120f+ocCxNqc1S0gxCFwEK2VgBiDBQ5ajsC2p0ZwAiwTY6mrhwNnUdPQHhtjiDRKF2H0WQe4RUfidNBTAtg+QxmUAqqXyHv4BGAodjK9RHX0CoDAfSxOJHUw+8tvasOQEep9SoAAAAAASUVORK5CYII=",
+    "description": "A mermaid."
+  },
+  {
+    "x": 34,
+    "y": 17,
+    "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAV0lEQVQ4T2NkoBAwUqifAacB54/t+I9suKGVB1a1WAXRNcMMwmYIhgG4NOMyhCgDYDaDDEd3BXUNIOR8bN5AccEwMADkR0LeICsW8KVI2iRlUjIYxbkRACBxOBHeOsh0AAAAAElFTkSuQmCC",
+    "description": "An egg."
+  },
+  {
+    "x": 14,
+    "y": 19,
+    "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAe0lEQVQ4T2NkoBAwUqifgTYGnD+24z82lxlaeWBYiCEA0oxNIchAbHJEGQDTSJIB2BTjNQDZ3/i8AAsbmBqwF9A14wtEdLUYBoAMJMYFMHXwQMRlK66EhuEFmAAhg5DVgdgYLsDlfJhLYBaguADZmcS6AKaHNnmBlBwKADsEXBGZTFq0AAAAAElFTkSuQmCC",
+    "description": "An alien spaceship."
+  },
+  {
+    "x": 11,
+    "y": 20,
+    "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAeElEQVQ4T2NkoBAwYtN//tiO/9jEDa08MNTjNABdMTZDQWrABiBLggRBfJINQNZIshfQXYAvXNHVwr2Ay+nohuE0gJzYRAlEbFFEyCtwA9BjghjXwCxECQNiNMLUwKIaIxBBCmCmwwIMG582BpDtBYoDkRSb0dUCAL5YhBHKakN/AAAAAElFTkSuQmCC",
+    "description": "A war tank."
+  },
+  {
+    "x": 14,
+    "y": 20,
+    "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAfklEQVQ4T7VSQQ6AMAzanuTVF/hkX+DVJ2kwYamV1SbLPGKhwFrL4FcH+WWewHnsl3W3rJtcJkGQPUFhWPARiMjqX0qAUUIBmxn2e04oxoiPA18YMNWBf3LMNAFuzdyFdSgdKLEe1kpUMSI3rw7s4J+Q72beKWfKlJeYJXLuBihKVBG7WG+0AAAAAElFTkSuQmCC",
+    "description": "An alien spaceship. A UFO."
+  }
+]

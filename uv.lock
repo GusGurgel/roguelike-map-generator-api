@@ -1251,6 +1251,20 @@ wheels = [
 ]
 
 [[package]]
+name = "langchain-nvidia-ai-endpoints"
+version = "1.0.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "aiohttp" },
+    { name = "filetype" },
+    { name = "langchain-core" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/43/73/72119007a7b3b2e927788c4c115074d8d45facb5ebb05c1612e8ff66d90c/langchain_nvidia_ai_endpoints-1.0.0.tar.gz", hash = "sha256:985f5597775b9ec652daa57ee65ec8bf82306326ff3f2d85ca60b57f83e45c19", size = 43257, upload-time = "2025-11-22T01:06:19.152Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/84/7e/c8bc0f93fd2efd44abae08fa05040d8ca093d0d46b2eaaa34695a6027b33/langchain_nvidia_ai_endpoints-1.0.0-py3-none-any.whl", hash = "sha256:e8dc1dcd44d436752ba1a25563c6937ec9cdec7613faa28aca7d0ab0b4e3d3bd", size = 46652, upload-time = "2025-11-22T01:06:18.143Z" },
+]
+
+[[package]]
 name = "langchain-ollama"
 version = "1.0.1"
 source = { registry = "https://pypi.org/simple" }
@@ -1363,6 +1377,7 @@ dependencies = [
     { name = "langchain-community" },
     { name = "langchain-google-genai" },
     { name = "langchain-groq" },
+    { name = "langchain-nvidia-ai-endpoints" },
     { name = "langchain-ollama" },
     { name = "pandas" },
     { name = "python-dotenv" },
@@ -1379,6 +1394,7 @@ requires-dist = [
     { name = "langchain-community", specifier = ">=0.4.1" },
     { name = "langchain-google-genai", specifier = ">=4.1.1" },
     { name = "langchain-groq", specifier = ">=1.1.1" },
+    { name = "langchain-nvidia-ai-endpoints", specifier = ">=1.0.0" },
     { name = "langchain-ollama", specifier = ">=1.0.1" },
     { name = "pandas", specifier = ">=2.3.3" },
     { name = "python-dotenv", specifier = ">=1.2.1" },
