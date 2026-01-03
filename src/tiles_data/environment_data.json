@@ -867,25 +867,25 @@
     "x": 0,
     "y": 13,
     "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAiklEQVQ4T61SuRGAMAwjI9EyASMzAS0jwblQzlEsJwfQcBBb0VeWj0+x/es8bo+zbnuxf/zmu+xcAgDYhjKS/zCYsYFl2k4jAXoB5r/5zM9UCSMAxTI1iJeQjDe4MzGiq2INY1QAik0oQRWLDQ5TGBWHmVQGbBByzthIBljKDG2KxL1/BTBT52jmAfJ1uBE4jfO1AAAAAElFTkSuQmCC",
-    "description": "Stone brick wall. Some bricks are broken."
+    "description": "Broken stone brick wall. Some bricks are broken."
   },
   {
     "x": 1,
     "y": 13,
     "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAhElEQVQ4T2NkoBAwgvSfP7bjP7I5hlYejCAxdBrdLpA83AAQhxzHYBiA7hpstsJcDXcBTBFMMy7XIMvDvIjiApggsg242BQbAHM1SsDR1QUUewHFAORYgMUAIe8QdAGuRIVsMEgNRiASkxqRkzjZSRkjDND9DHIJzCZsGQ0mT1YGQjYQAEeq3BFmBF0RAAAAAElFTkSuQmCC",
-    "description": "Stone wall with a barred window."
+    "description": "Broken stone brick wall. with a barred window."
   },
   {
     "x": 2,
     "y": 13,
     "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAkElEQVQ4T6WTwQ2AMAwD6Uh8mYCRmYBvRwLl4cp1E0hVPpWS4jiHKdviU+z9el8P6+zHWaymp86yfidghVlDroA6gigGoN8c8FRuRvVBAPuCR7QKc7G7HQO29yfAzgZo7EaBek4HiGqTAU4JeJ8zFFDaGQYQayssQ4x29+L7mYNMlN0kKiAEJfrRuiBlpkZ3XpRAtBGT0AFuAAAAAElFTkSuQmCC",
-    "description": "Stone wall with a glass window."
+    "description": "Broken stone brick wall with a glass window."
   },
   {
     "x": 4,
     "y": 13,
     "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAfklEQVQ4T2NkoBAwgvSfP7bjP4g2tPJghLGR+cji6GyyDEB2NNgAcgDIpSDX4HQBSBLZYHRvwuSxGoCuGWYQzFZYuMFdQKoXkA2COxNZkBgDMcIAl7MJGUaWC5ADFB6IpLgAwwDkUCXkZHR5shISVi/A0j4xLqC+AcTYiksNAMo3gBEgsAWeAAAAAElFTkSuQmCC",
-    "description": "Stone passageway arch"
+    "description": "Broken stone brick stone passageway arch"
   },
   {
     "x": 5,
@@ -1179,25 +1179,25 @@
     "x": 10,
     "y": 17,
     "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAQ0lEQVQ4T2NkoBAwgvSfP7bjP7o5hlYejDBxZDayOpA4dQygxBcoLsDlVHRnI3uNOgZQzQv4nIorpkZjAZoSR3gsAABzc3gRBrdE4gAAAABJRU5ErkJggg==",
-    "description": "Wall made of smooth stone bricks."
+    "description": "Stone brick wall."
   },
   {
     "x": 11,
     "y": 17,
     "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAY0lEQVQ4T2NkoBAwgvSfP7bjP7o5hlYejDBxZDayOpA4dQygxBcoLsDlVHRnI3sNqwEgg7C5CqQRPWwwFMIU4TMAWY46LkCPLmxhARMbIl7Aly4IeoHUREWdpExxZiLV2cjqAXqrnBHox9w3AAAAAElFTkSuQmCC",
-    "description": "A smooth stone brick wall with a window in the middle."
+    "description": "Stone brick wall with a window in the middle."
   },
   {
     "x": 12,
     "y": 17,
     "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAc0lEQVQ4T2NkoBAwgvSfP7bjP7o5hlYejDBxZDayOpA4dQygxBdwF+ByJjbDYWpRvIAsiM9FoHDBMACmASYJC1iQQnxskByGFwhpwuoCdEFiXADTA3YBTbyAKyAJeoGYNIEzFojRjK6GOkmZ4sxEjtNhegCTQrgRY6z3YgAAAABJRU5ErkJggg==",
-    "description": "A smooth stone brick wall with a barred window in the middle."
+    "description": "Stone brick wall with a barred window in the middle."
   },
   {
     "x": 13,
     "y": 17,
     "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAU0lEQVQ4T2NkoBAwgvSfP7bjP7o5hlYejDBxZDayOpA4dQygxBcoLgA5iRjDkL1GHQOIsRWXGrgLiHU+zCCQN1BigSIDqOIFkCHEumKQxsLQzQsA0sVgEeQVk3gAAAAASUVORK5CYII=",
-    "description": "A wall made of smooth stone bricks with a hole in the middle."
+    "description": "Stone brick wall with a hole in the middle."
   },
   {
     "x": 14,
