@@ -49,6 +49,10 @@ class GroqModels:
     # RDP = 1K
     OPENAI_GPT_OSS_120B = "openai/gpt-oss-120b"
 
+    OPENAI_GPT_OSS_20B = "openai/gpt-oss-20b"
+
+    LLAMA_3_1_8B_INSTANT = "llama-3.1-8b-instant"
+
 
 class NvidiaModels:
     # https://build.nvidia.com/models
