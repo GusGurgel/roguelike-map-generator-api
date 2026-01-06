@@ -19,19 +19,61 @@ DATABASES = {
     "items": {
         "csv_path": join(MAIN_PATH, "tiles_data", "items_data.csv"),
         "db_path": join(MAIN_PATH, "chroma_items_db"),
-        "collection_name": "Items_Descriptions"
+        "collection_name": "Items_Descriptions",
     },
     "environments": {
         "csv_path": join(MAIN_PATH, "tiles_data", "environment_data.csv"),
         "db_path": join(MAIN_PATH, "chroma_environments_db"),
-        "collection_name": "Environments_Descriptions"
+        "collection_name": "Environments_Descriptions",
     },
     "entities": {
         "csv_path": join(MAIN_PATH, "tiles_data", "entities_data.csv"),
         "db_path": join(MAIN_PATH, "chroma_entities_db"),
-        "collection_name": "Entities_Descriptions"
-    }
+        "collection_name": "Entities_Descriptions",
+    },
 }
+
+
+def get_full_csv() -> pd.DataFrame:
+    dataframes_list = []
+
+    for category, config in DATABASES.items():
+        csv_path = config["csv_path"]
+
+        if os.path.exists(csv_path):
+            try:
+                df = pd.read_csv(csv_path)
+
+                df["category"] = category
+
+                dataframes_list.append(df)
+            except Exception as e:
+                print(f"Erro ao ler o arquivo {csv_path}: {e}")
+        else:
+            print(f"Aviso: Arquivo não encontrado em {csv_path}")
+
+    if not dataframes_list:
+        return pd.DataFrame()
+
+    full_df = pd.concat(dataframes_list, ignore_index=True)
+
+    return full_df
+
+
+full_csv = get_full_csv()
+
+
+def query_by_tileset_position(x: int, y: int) -> list[dict]:
+    # Filtra o DataFrame onde a coluna 'x' é igual ao parametro x E a coluna 'y' é igual a y
+    matches = full_csv[(full_csv["x"] == x) & (full_csv["y"] == y)]
+
+    # Se não houver correspondência, retorna lista vazia
+    if matches.empty:
+        return []
+
+    # Converte as linhas encontradas para uma lista de dicionários (records)
+    # Isso facilita o uso posterior (ex: tile['base64'], tile['description'])
+    return matches.to_dict(orient="records")
 
 
 def get_vector_store(store_type: StoreType) -> Chroma:
@@ -40,10 +82,12 @@ def get_vector_store(store_type: StoreType) -> Chroma:
     Cria o banco se ele ainda não existir.
     """
     if store_type not in DATABASES:
-        raise ValueError(f"Tipo de store inválido: {store_type}. Escolha entre: {list(DATABASES.keys())}")
+        raise ValueError(
+            f"Tipo de store inválido: {store_type}. Escolha entre: {list(DATABASES.keys())}"
+        )
 
     db_config = DATABASES[store_type]
-    
+
     is_vector_database_created = os.path.exists(db_config["db_path"])
 
     if not is_vector_database_created:
@@ -65,12 +109,12 @@ def create_vector_store(store_type: StoreType):
         raise ValueError(f"Tipo de store inválido: {store_type}")
 
     db_config = DATABASES[store_type]
-    
+
     if not os.path.exists(db_config["csv_path"]):
         raise FileNotFoundError(f"Arquivo CSV não encontrado: {db_config['csv_path']}")
 
     df_tiles = pd.read_csv(db_config["csv_path"])
-    
+
     documents = []
     ids = []
 
@@ -79,7 +123,7 @@ def create_vector_store(store_type: StoreType):
             "b64image": row.get("base64", ""),
             "x": row.get("x", 0),
             "y": row.get("y", 0),
-            "type": store_type # Útil para identificar a origem depois se necessário
+            "type": store_type,  # Útil para identificar a origem depois se necessário
         }
 
         document = Document(
@@ -100,7 +144,9 @@ def create_vector_store(store_type: StoreType):
     print(f"Vector store '{store_type}' criado com sucesso em {db_config['db_path']}")
 
 
-def query_vector_store(query: str, store_type: StoreType, documents_count: int = 4) -> list:
+def query_vector_store(
+    query: str, store_type: StoreType, documents_count: int = 4
+) -> list:
     """
     Faz uma busca no vector store especificado pelo store_type.
     """
