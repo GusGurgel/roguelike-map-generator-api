@@ -308,6 +308,10 @@ Create a roguelike with the theme as Dark Souls the game.
 """
 
 if __name__ == "__main__":
-    asset_buddle: AssetBundle = load_dark_souls_asset_bundle()
+    asset_generator = AssetsGenerator(map_description)
+
+    asset_buddle: AssetBundle = asset_generator.generate_asset_bundle()
+
+    save_object(asset_buddle, join(MAIN_PATH, "saves/", "dark_souls_asset_bundle.pk"))
 
     pprint(asset_buddle.final_objective.model_dump())

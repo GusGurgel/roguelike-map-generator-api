@@ -8,7 +8,7 @@ class DungeonLevel(BaseModel):
         description="A basic description of the level.",
     )
 
-    description: str = Field(
+    name: str = Field(
         description="The name of level in title case (ex: The Crypts, The Red Desert, Forest of The Fallen Giants).",
     )
 

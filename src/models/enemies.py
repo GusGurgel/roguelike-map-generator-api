@@ -14,7 +14,7 @@ class Enemy(BaseModel):
         description="The weight of the enemy. More weight, more damage, but more time to use the hit.",
     )
 
-    weight: int = Field(
+    thread: int = Field(
         gt=0,
         lt=11,
         description="The thread of the enemy. More thread, more damage, but more rare to find this enemy.",
