@@ -1,15 +1,18 @@
 from typing import Type, TypeVar
 from pydantic import BaseModel
-from langchain.messages import SystemMessage, HumanMessage, AIMessage
 from devtools import pprint
 from time import sleep
 from os.path import join
 
+from langchain.messages import SystemMessage, HumanMessage, AIMessage
+from langchain_core.callbacks import UsageMetadataCallbackHandler
 
-from utils import MAIN_PATH, save_object, load_object
+
+from utils import *
 from llm_models import get_model, Providers, GroqModels, GoogleModels
-from models import *
+from models import *  # type: ignore
 from vector_db import query_vector_store, StoreType, query_by_tileset_position
+from db import *
 
 
 T = TypeVar("T", bound=BaseModel)
@@ -21,6 +24,7 @@ class AssetsGenerator:
 
     def __init__(self, theme_description) -> None:
         self.model = get_model(Providers.GROQ, GroqModels.OPENAI_GPT_OSS_120B)
+        self.usage_callback = UsageMetadataCallbackHandler()
 
         # O prompt agora atua como um "Lead Game Designer" criando a documentação base.
         response = self.model.invoke(
@@ -45,7 +49,8 @@ Please define:
 Do not list specific item stats yet. Focus on the narrative and sensory details to guide future generation.
 """
                 )
-            ]
+            ],
+            config={"callbacks": [self.usage_callback]},
         )
 
         self.raw_theme_description = theme_description
@@ -58,7 +63,10 @@ Do not list specific item stats yet. Focus on the narrative and sensory details 
 
     def _ask_llm_structured(self, schema_class: Type[T], messages: list) -> T:
         structured_llm = self._get_structured_model(schema_class)
-        result = structured_llm.invoke(messages)
+        result = structured_llm.invoke(
+            messages,
+            config={"callbacks": [self.usage_callback]},
+        )
         return schema_class.model_validate(result)
 
     def generate_player(self) -> Player:
@@ -279,6 +287,7 @@ Generate the title now.
             enemies=enemies_with_texture,
             weapons=weapons_with_texture,
             final_objective=final_objective_with_texture,
+            usage_metadata=self.usage_callback.usage_metadata,
         )
 
     @staticmethod
@@ -297,21 +306,41 @@ Generate the title now.
         return TileWithTexture(**tile.model_dump(), texture=texture)
 
 
-def load_dark_souls_asset_bundle() -> AssetBundle:
-    return load_object(
-        join(MAIN_PATH, "saves/", "dark_souls_asset_bundle.pk"), AssetBundle
+def load_zombie_souls_asset_bundle() -> AssetBundle:
+    return load_object_json(
+        join(MAIN_PATH, "saves/", "zombie_asset_bundle.json"), AssetBundle
     )
 
 
 map_description = """
-Create a roguelike with the theme as Dark Souls the game.
+Create a roguelike with the theme as zombie pos apocalyptic world.
 """
 
 if __name__ == "__main__":
-    asset_generator = AssetsGenerator(map_description)
+    id = find_all_assets_bundles()[0]["id"]
 
-    asset_buddle: AssetBundle = asset_generator.generate_asset_bundle()
+    asset_buddle = find_bundle_data_by_id(id)
 
-    save_object(asset_buddle, join(MAIN_PATH, "saves/", "dark_souls_asset_bundle.pk"))
+    if asset_buddle != None:
+        print(asset_buddle.final_objective)
 
-    pprint(asset_buddle.final_objective.model_dump())
+    # asset_generator = AssetsGenerator(map_description)
+
+    # asset_buddle: AssetBundle = load_zombie_souls_asset_bundle()
+
+    # save_object_json(
+    #     asset_buddle, join(MAIN_PATH, "saves/", "zombie_asset_bundle.json")
+    # )
+    # pprint(asset_buddle.usage_metadata)
+    # id = insert_asset_bundle(
+    #     asset_buddle.name,
+    #     asset_buddle.description,
+    #     GroqModels.OPENAI_GPT_OSS_120B,
+    #     asset_buddle,
+    # )
+
+    # print(id)
+
+    # save_object(asset_buddle, join(MAIN_PATH, "saves/", "zombie_asset_bundle.pk"))
+
+    # pprint(asset_buddle.final_objective.model_dump())

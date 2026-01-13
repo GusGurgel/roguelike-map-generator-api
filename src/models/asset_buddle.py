@@ -27,3 +27,5 @@ class AssetBundle(AssetBundleBase):
     weapons: WeaponWithTextureList
 
     final_objective: FinalObjectiveWithTexture
+
+    usage_metadata: dict
