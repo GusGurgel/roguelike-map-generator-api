@@ -1,0 +1,8 @@
+{
+  "analise_critica": "O Asset Bundle é uma tradução impecável da narrativa para elementos de jogo, capturando com perfeição a estética 'Sunken Grit' (pirataria + horror fúngico). A progressão dos níveis, a variedade de inimigos (misturando espectros, vida marinha e mutações fúngicas) e o arsenal temático demonstram uma atenção aos detalhes que enriquece a imersão sem desvios lógicos.",
+  "pontos_positivos":     "A caracterização do jogador como um 'Cursed Corsair' com prótese fúngica conecta-o diretamente à lore. Itens como 'Barnacle Axe', 'Voss Reaver' e 'Lumenmycel Crown' não são apenas armas genéricas, mas extensões narrativas do mundo. A descrição dos níveis reflete fielmente a iluminação e a atmosfera opressiva descrita.",
+  "pontos_negativos":     "Não foram encontradas falhas significativas ou alucinações; o pacote é extremamente coeso.",
+  "nota_coerencia": 98
+}
+
+0.9080974247071126

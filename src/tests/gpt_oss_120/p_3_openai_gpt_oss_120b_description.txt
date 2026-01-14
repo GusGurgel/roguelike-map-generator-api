@@ -1,0 +1,44 @@
+**1. Setting Name**  
+**The Drowned Maw of Blackwater Cove**  
+
+---
+
+**2. Visual Style & Atmosphere**  
+
+*Art Direction – “Sunken Grit”*  
+A hybrid of gritty pirate‑age realism and eerie subterranean fantasy. Rough, weather‑worn timber and rusted iron coexist with slick, algae‑covered stone. The palette is dominated by deep indigos, muted slate grays, and the sickly green‑blue glow of bioluminescent fungi that pulse like underwater lanterns. Weathered planks are splintered, rope bridges frayed, and the occasional barnacle‑caked cannon protrudes from the rock like a fossil.  
+
+*Lighting*  
+Dim, filtered light streams from a few fissures in the cavern ceiling, casting thin shafts that illuminate floating spores. The majority of illumination comes from the fungal growths—clusters of glowing mushrooms that bathe walkways in a soft, phosphorescent teal. Flickering lanterns salvaged from wrecked ships add warm amber pools that contrast with the cold glow of the water.  
+
+*Ambient Noise*  
+A constant, low‑rumble of distant waves crashing against unseen cliffs, punctuated by the occasional splash of a falling droplet. Dripping water echoes through the chambers, while the creak of wooden walkways underfoot competes with the distant, guttural clicks of unseen aquatic predators. In the background, a mournful shanty drifts on the wind, sung by the ghosts of long‑dead crews.  
+
+*Atmospheric Effects*  
+- **Mist & Spray:** Thin, salty mist hangs over the water tiles, occasionally coalescing into larger plumes when a bridge is crossed.  
+- **Moss & Fungi:** Thick, damp moss carpets the stone, and bioluminescent fungi pulse in rhythmic patterns, hinting at hidden pathways.  
+- **Water Dynamics:** Dark, deep water reflects the faint glow above, while occasional whirlpools hint at unseen currents that can drag the unwary down.  
+
+---
+
+**3. Lore**  
+
+Centuries ago, the notorious pirate queen **Mara “Black Tide” Voss** discovered a massive sea‑cave system while fleeing a royal fleet. The cavern’s entrance was concealed behind a waterfall that fell into a subterranean ocean, making it impossible to locate from the surface. Seeing an opportunity, Mara ordered her crew to carve out a hidden haven—**the Drowned Maw**—by salvaging wrecked vessels that had been crushed by the cave’s crushing pressures and repurposing them as taverns, armories, and black‑market stalls.
+
+The cove thrived as a lawless refuge, a place where outlaws could trade stolen treasure, repair their ships, and plot new raids. Over time, the cavern’s natural magic—an ancient, dormant bioluminescent fungus known as **the Lumenmycel**—began to intertwine with the pirate’s blood rituals. The Lumenmycel fed on the lingering curses of the dead sailors, granting the cavern a faint, sentient glow.
+
+When Mara’s reign ended in a mutiny, the Lumenmycel seized the opportunity to expand its influence. It seeped into the wooden structures, warping timber into twisted, living vines and animating the wrecked hulls with a malevolent will. The once‑busy market stalls became lairs for the **Abyssal Corsairs**, spectral pirates bound to the fungus, while the water itself grew hungry, spawning **deep‑water leviathans** that patrol the flooded passages.
+
+Now, the Drowned Maw is a labyrinth of decaying wood, slick stone, and ever‑shifting bioluminescent light—a place where the echoes of past plunder still linger, but the very walls conspire against any who dare intrude.
+
+---
+
+**4. Core Conflict**  
+
+The heart of the Drowned Maw is the **Lumenmycel Hive**, a colossal fungal organism that has fused with the cavern’s geology and the remnants of Mara’s fleet. It feeds on the lingering souls of the dead pirates, converting their restless energy into spores that corrupt both wood and stone.  
+
+- **Corruption:** The Hive exudes a toxic spore cloud that slowly mutates any organic material it touches, turning sturdy planks into brittle, sentient tendrils and turning ordinary rock into slick, gelatinous growths that can trap unwary feet.  
+- **Curse:** Anyone who stays too long within the cavern begins to hear the ghostly shanty of Mara, a mental lure that drives adventurers to betray allies and seek the Hive’s “gift” of eternal piracy.  
+- **Enemy Force:** The **Abyssal Corsairs**, once mortal crew members, now exist as half‑spirit, half‑fungus warriors bound to the Hive’s will. They patrol the walkways, defend the secret alcoves, and enforce the Hive’s twisted order.  
+
+The player’s ultimate goal is to navigate the treacherous verticality of the cavern, survive the aquatic monsters that guard the water tiles, and either **purge the Lumenmycel Hive**—restoring the cove to a safe haven—or **harness its power**, turning the Drowned Maw into a base for their own piratical empire. The tension between the alluring promise of untold loot and the ever‑present threat of fungal domination defines every encounter within the Drowned Maw of Blackwater Cove.

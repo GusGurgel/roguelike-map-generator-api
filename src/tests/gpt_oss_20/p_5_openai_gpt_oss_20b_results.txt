@@ -1,0 +1,8 @@
+{
+  "analise_critica": "O Asset Bundle demonstra uma fidelidade impressionante à narrativa de 'horror biológico'. A tradução do conceito de um organismo planetário vivo para mecânicas de jogo (níveis como 'veias' e 'esôfago', armas feitas de ossos e músculos) é criativa e coesa. A integração da lore da 'frota engolida' através de itens de sucata (scavenged steel) adiciona uma camada de profundidade narrativa excelente.",
+  "pontos_positivos":  "A ambientação dos níveis segue logicamente a anatomia descrita (Esôfago -> Câmara de Esporos -> Núcleo). A lista de armas é excepcionalmente criativa, misturando partes orgânicas ('Broken Muscle Hammer', 'Marrow Blast Gun') com tecnologia sucateada ('Makeshift Gun'), validando a lore da frota perdida. Os inimigos refletem perfeitamente os perigos ambientais citados (ácido, válvulas, espinhos).",
+  "pontos_negativos":  "Pequenas discrepâncias nos metadados técnicos visuais ('tileset_description'), onde paredes de músculo são mapeadas para sprites de 'wooden door' ou chão de tecido para 'stone floor', embora as descrições textuais do jogo estejam corretas.",
+  "nota_coerencia": 96
+}
+
+0.895451871091515

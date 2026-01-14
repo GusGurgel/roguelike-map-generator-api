@@ -349,8 +349,8 @@ def load_zombie_souls_asset_bundle() -> AssetBundle:
 
 
 if __name__ == "__main__":
-    model_key = GroqModels.OPENAI_GPT_OSS_120B
-    prompt_index = 0
+    model_key = GroqModels.META_LLAMA_LLAMA_4_MAVERICK_17B_128E_INSTRUCT
+    prompt_index = 4
 
     asset_generator = AssetsGenerator(prompts[prompt_index])
 
@@ -359,6 +359,13 @@ if __name__ == "__main__":
     name = f"p_{prompt_index+1}_{model_key.replace("-","_").replace("/","_").lower().strip()}"
 
     asset_bundle.name = name
+
+    with open(
+        join(MAIN_PATH, "tests", f"{name}_description.txt"),
+        "w",
+        encoding="utf-8",
+    ) as file:
+        file.write(asset_bundle.description)
 
     insert_asset_bundle(asset_bundle, model_key)
 
@@ -416,3 +423,10 @@ Please, reconstruct the thematic description based strictly on this Asset Bundle
 Write the narrative description of the environment represented above (in English).
 """
         file.write(prompt_to_save)
+
+    with open(
+        join(MAIN_PATH, "tests", f"{name}_results.txt"),
+        "w",
+        encoding="utf-8",
+    ) as file:
+        file.write("")

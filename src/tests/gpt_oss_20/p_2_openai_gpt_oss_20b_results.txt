@@ -1,0 +1,6 @@
+{
+  "analise_critica": "O Asset Bundle acerta com precisão a atmosfera visual e a estrutura dos níveis, respeitando rigorosamente a paleta de cores e a temática industrial da narrativa. No entanto, a coerência é prejudicada significativamente na categoria de armas e, em menor grau, nos inimigos, onde tropos de fantasia medieval (varinhas, arcos, fantasmas) foram inseridos indevidamente em um cenário de ficção científica 'gritty'.",
+  "pontos_positivos":   "A descrição dos níveis (ex: 'Outer Hull Breach' com LEDs âmbar e 'Medical Bay' estéril) reflete perfeitamente a direção de arte do texto. O objetivo final e a história de fundo do jogador estão bem integrados à lore da nave.",
+  "pontos_negativos":   "A lista de armas contém itens absurdos para o cenário, como 'Tattered Rapier', 'Flickering Wand', 'Dented Bow' e 'Abyssal Wand', que contradizem a estética industrial. A presença de inimigos sobrenaturais ('Rusty Ghost', 'Vacuum Wraith') destoa da ameaça tecnológica (IA e Drones) estabelecida no texto.",
+  "nota_coerencia": 68
+}

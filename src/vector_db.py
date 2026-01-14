@@ -196,4 +196,17 @@ def query_vector_store(
 
 
 if __name__ == "__main__":
-    pass
+    original = ""
+    reconstruction = ""
+
+    with open(join(MAIN_PATH, "original.txt"), "r") as file:
+        original = file.read()
+
+    with open(join(MAIN_PATH, "reconstruction.txt"), "r") as file:
+        reconstruction = file.read()
+
+    print(original)
+    print("-" * 80)
+    print(reconstruction)
+    print("-" * 80)
+    print(get_cosine_similarity(original, reconstruction))

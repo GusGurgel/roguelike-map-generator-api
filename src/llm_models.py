@@ -67,4 +67,5 @@ class NvidiaModels:
 def get_model(provider, model):
     return provider(
         model=model,
+        temperature=0.4,
     )

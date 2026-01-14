@@ -1,0 +1,25 @@
+**1. Setting Name**  
+**The Obsidian Forge of Khar‑Gorath**
+
+**2. Visual Style & Atmosphere**  
+The Obsidian Forge is rendered in a **Gritty Industrial‑Baroque** style. Geometry dominates: every wall, pillar, and arch is a clean, angular slice of stone, cut with surgical precision into the mountain’s heart. The color palette is a muted spectrum of greys, deep reds, and molten golds, punctuated by the iridescent glow of flowing lava.  
+
+- **Lighting**: The interior is lit by a combination of flickering forge fires, the steady orange of molten rivers, and the occasional burst of phosphorescent fungi that cling to the damp stone. Shadows are long and oppressive, casting a sense of claustrophobia even in the widest halls.  
+- **Ambient Noise**: The constant rumble of distant molten flows, the clanging of heavy anvil work, the hiss of steam vents, and the low, guttural growls of goblin patrols create a layered soundscape. Occasional metallic clangs echo through the corridors, as if the very stone is alive.  
+- **Weather & Environmental Effects**: The air is thick with heat and mineral dust. Steam rises from fissures, condensing into a mist that clings to the stone. In some chambers, the floor is slick with a thin film of molten metal, making footing treacherous.  
+
+**3. The Lore**  
+Long before the world’s surface was carved into kingdoms, the dwarves of the Khar‑Gorath line forged a subterranean citadel deep within the heart of Mount Varkul. The mountain itself was a living furnace, its core a vast reservoir of molten rock. The dwarves harnessed this primal heat, building massive foundries, intricate mining tunnels, and a throne hall that glimmered with gold and obsidian.  
+
+When the dwarven line fell into a war of succession, the great king, Khar‑Gorath, sealed the citadel’s main gates and sealed the mountain’s heart with a spell of eternal fire. The spell was meant to protect the dwarven legacy, but it also trapped the dwarves inside, turning the mountain into a living furnace. Over centuries, the heat melted the stone, carving rivers of lava that cut through the halls and turned once‑pristine chambers into molten wastelands.  
+
+The goblins, ever opportunistic, discovered the mountain’s fissures and began to tunnel into the abandoned stronghold. They found the ancient machinery still humming, the forge fires still burning, and the gold statues still gleaming. They took over the foundries, turned the storage rooms into hoards of rusted weapons, and claimed the throne hall as their own. The goblin king, a twisted dwarf‑born warlord, now commands the mountain’s heat, using it to forge weapons of terror.  
+
+**4. The Core Conflict**  
+The Obsidian Forge is controlled by a **corruptive, sentient heat**—the “Molten Maw.” This ancient, sentient magma has been awakened by the dwarves’ sealing spell and the goblins’ exploitation of the forge. It feeds on the metal and stone of the citadel, growing more volatile with each strike of a hammer or each goblin raid.  
+
+- **Manifestations**: The Molten Maw manifests as shifting lava flows that can swallow entire corridors, as sudden eruptions that crack stone pillars, and as a whispering hiss that drives goblins into madness.  
+- **Goal of the Maw**: To consume all metal and stone, to expand its molten heart, and to eventually breach the mountain’s surface, turning the world into a furnace of ash.  
+- **Player’s Role**: The player must navigate the claustrophobic halls, avoid or control the Maw’s eruptions, and find the ancient dwarven artifacts that can seal or redirect the Maw’s power. The secret mining tunnels offer a path to the heart of the mountain, but they are riddled with traps and goblin ambushes.  
+
+The Obsidian Forge of Khar‑Gorath is a place where the ancient pride of dwarven craftsmanship clashes with the relentless hunger of a living magma, all while a goblin empire seeks to harness the very fire that threatens to consume them all.

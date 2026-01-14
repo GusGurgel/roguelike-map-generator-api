@@ -1,0 +1,18 @@
+**1. Setting Name**  
+*The Verdant Maw*
+
+**2. Visual Style & Atmosphere**  
+The Verdant Maw is rendered in a hyper‑realistic, bioluminescent style that blends the uncanny beauty of a living organism with the claustrophobic dread of a subterranean nightmare. The palette is dominated by deep, pulsing reds and sickly greens, punctuated by phosphorescent blues that glow from within the tissue. Light is scarce and diffuse, filtered through layers of translucent muscle and dripping mucus, creating a perpetual twilight that feels both intimate and oppressive. Ambient sounds are a constant, low‑frequency hum of cellular respiration, interspersed with sharp, echoing thuds of valves slamming shut, the hiss of acidic pools, and the distant, rhythmic thrum of a heart that never stops. The environment feels alive: the walls seem to breathe, the floor shifts underfoot, and the air is thick with a faint, sweet odor of fermenting organic matter.
+
+**3. The Lore**  
+Long before humanity’s first probes reached the outer reaches of the galaxy, a colossal, planet‑sized alien organism—known to its own species as *The Great Digestor*—was discovered drifting through space. It was a living vessel, a biological ark that carried its own ecosystem, a living laboratory of evolution. When a fleet of exploratory vessels entered its interior, they found no artificial structures, only a vast, self‑contained digestive system. The vessels were swallowed, and the crew’s bodies were consumed, their remains becoming part of the organism’s nutrient cycle. The Digestor’s internal architecture is a living, adaptive network of veins, chambers, and valves that constantly reorganizes to process incoming matter. Over millennia, it has evolved to be both a cradle for life and a predator of anything that threatens its internal balance.
+
+**4. The Core Conflict**  
+The Verdant Maw is not merely a passive environment; it is an entity with intent. A malignant mutation—*The Corrosion*—has taken root in the Digestor’s core. This parasitic cellular plague corrupts the organism’s biology, turning once‑beneficial tissues into aggressive, self‑replicating structures. The Corrosion manifests as:
+
+- **Constricting Valves** that tighten like a fist, sealing off pathways and trapping intruders.  
+- **Spore‑laden Mucus** that spreads across the floor, slowing movement and eventually turning the player’s limbs into a living conduit for the Corrosion.  
+- **Acidic Pools** that corrode weapons and armor, forcing players to rely on raw skill and adaptive tactics.  
+- **Erupting Spikes** that spring from walls and floors, a defense mechanism that has become erratic and deadly under the Corrosion’s influence.
+
+The player’s objective is to navigate this ever‑shifting, hostile interior, uncovering the truth behind the Corrosion and, if possible, restoring the Digestor’s original purpose—or escaping before the organism consumes them entirely. The conflict is a battle against a living, evolving threat that rewrites the rules of space and time within its own body.
