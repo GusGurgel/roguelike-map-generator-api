@@ -349,8 +349,8 @@ def load_zombie_souls_asset_bundle() -> AssetBundle:
 
 
 if __name__ == "__main__":
-    model_key = GroqModels.META_LLAMA_LLAMA_4_MAVERICK_17B_128E_INSTRUCT
-    prompt_index = 4
+    model_key = GroqModels.OPENAI_GPT_OSS_120B
+    prompt_index = 0
 
     asset_generator = AssetsGenerator(prompts[prompt_index])
 
@@ -361,72 +361,72 @@ if __name__ == "__main__":
     asset_bundle.name = name
 
     with open(
-        join(MAIN_PATH, "tests", f"{name}_description.txt"),
+        join(MAIN_PATH, "tests", f"{name}_bundle.txt"),
         "w",
         encoding="utf-8",
     ) as file:
-        file.write(asset_bundle.description)
+        file.write(asset_bundle.model_dump_json())
 
     insert_asset_bundle(asset_bundle, model_key)
 
-    asset_bundle_dict = asset_bundle.model_dump()
-    metadata = {}
-    metadata["name"] = asset_bundle_dict["name"]
-    metadata["description"] = asset_bundle_dict["description"]
-    metadata["raw_description"] = asset_bundle_dict["raw_description"]
-    metadata["usage_metadata"] = asset_bundle_dict["usage_metadata"]
-    metadata["generation_time_seconds"] = asset_bundle_dict["generation_time_seconds"]
+#     asset_bundle_dict = asset_bundle.model_dump()
+#     metadata = {}
+#     metadata["name"] = asset_bundle_dict["name"]
+#     metadata["description"] = asset_bundle_dict["description"]
+#     metadata["raw_description"] = asset_bundle_dict["raw_description"]
+#     metadata["usage_metadata"] = asset_bundle_dict["usage_metadata"]
+#     metadata["generation_time_seconds"] = asset_bundle_dict["generation_time_seconds"]
 
-    del asset_bundle_dict["name"]
-    del asset_bundle_dict["description"]
-    del asset_bundle_dict["raw_description"]
-    del asset_bundle_dict["usage_metadata"]
-    del asset_bundle_dict["generation_time_seconds"]
+#     del asset_bundle_dict["name"]
+#     del asset_bundle_dict["description"]
+#     del asset_bundle_dict["raw_description"]
+#     del asset_bundle_dict["usage_metadata"]
+#     del asset_bundle_dict["generation_time_seconds"]
 
-    with open(
-        join(MAIN_PATH, "tests", f"{name}_assets.json"), "w", encoding="utf-8"
-    ) as file:
-        file.write(json.dumps(asset_bundle_dict))
+#     with open(
+#         join(MAIN_PATH, "tests", f"{name}_assets.json"), "w", encoding="utf-8"
+#     ) as file:
+#         file.write(json.dumps(asset_bundle_dict))
 
-    with open(
-        join(MAIN_PATH, "tests", f"{name}_metadata.json"), "w", encoding="utf-8"
-    ) as file:
-        file.write(json.dumps(metadata))
+#     with open(
+#         join(MAIN_PATH, "tests", f"{name}_metadata.json"), "w", encoding="utf-8"
+#     ) as file:
+#         file.write(json.dumps(metadata))
 
-    with open(
-        join(MAIN_PATH, "tests", f"{name}_prompt_analyzer.txt"), "w", encoding="utf-8"
-    ) as file:
-        prompt_to_save = f"""
-Por favor, realize a auditoria de coerência para o seguinte par de Descrição e Asset Bundle.
+#     with open(
+#         join(MAIN_PATH, "tests", f"{name}_prompt_analyzer.txt"), "w", encoding="utf-8"
+#     ) as file:
+#         prompt_to_save = f"""
+# Por favor, realize a auditoria de coerência para o seguinte par de Descrição e Asset Bundle.
 
-=== DESCRIÇÃO MELHORADA (Narrativa) ===
-{asset_bundle.description}
+# === DESCRIÇÃO MELHORADA (Narrativa) ===
+# {asset_bundle.description}
 
-=== ASSET BUNDLE GERADO (JSON) ===
-{json.dumps(asset_bundle_dict)}
+# === ASSET BUNDLE GERADO (JSON) ===
+# {json.dumps(asset_bundle_dict)}
 
-Realize a avaliação agora.
-"""
-        file.write(prompt_to_save)
+# Realize a avaliação agora.
+# """
+#         file.write(prompt_to_save)
 
-    with open(
-        join(MAIN_PATH, "tests", f"{name}_prompt_reconstruction.txt"),
-        "w",
-        encoding="utf-8",
-    ) as file:
-        prompt_to_save = f"""
-Please, reconstruct the thematic description based strictly on this Asset Bundle:
+#     with open(
+#         join(MAIN_PATH, "tests", f"{name}_prompt_reconstruction.txt"),
+#         "w",
+#         encoding="utf-8",
+#     ) as file:
+#         prompt_to_save = f"""
+# Please, reconstruct the thematic description based strictly on this Asset Bundle:
 
-=== ASSET BUNDLE (JSON) ===
-{json.dumps(asset_bundle_dict)}
+# === ASSET BUNDLE (JSON) ===
+# {json.dumps(asset_bundle_dict)}
 
-Write the narrative description of the environment represented above (in English).
-"""
-        file.write(prompt_to_save)
+# Write the narrative description of the environment represented above (in English).
+# """
+#         file.write(prompt_to_save)
 
-    with open(
-        join(MAIN_PATH, "tests", f"{name}_results.txt"),
-        "w",
-        encoding="utf-8",
-    ) as file:
-        file.write("")
+#     with open(
+#         join(MAIN_PATH, "tests", f"{name}_results.txt"),
+#         "w",
+#         encoding="utf-8",
+#     ) as file:
+#         file.write("")

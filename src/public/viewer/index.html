@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualizador de AssetBundle Roguelike</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Biblioteca para gerar o print da div -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+
+    <header class="no-print">
+        <h1>AssetBundle Viewer</h1>
+        <p>Ferramenta de visualização para TCC - Geração Procedural</p>
+        
+        <div class="controls">
+            <label for="fileInput" class="btn upload-btn">
+                📂 Carregar JSON
+                <input type="file" id="fileInput" accept=".json">
+            </label>
+            <button id="btnSave" class="btn save-btn" disabled>💾 Salvar Imagem</button>
+        </div>
+        <p class="status" id="statusMsg">Aguardando tileset.png e JSON...</p>
+    </header>
+
+    <!-- Área principal que será renderizada na imagem final -->
+    <main id="capture-area">
+        
+        <!-- Cabeçalho do Bundle -->
+        <div id="bundle-header" class="hidden">
+            <h1 id="bundle-title">Nome do Asset Pack</h1>
+            <p id="bundle-desc">Descrição do pacote gerado...</p>
+            <div class="meta-tag">Gen Time: <span id="gen-time">0</span>s</div>
+        </div>
+
+        <!-- Grid de Conteúdo -->
+        <div id="content-grid" class="hidden">
+            
+            <!-- Coluna Esquerda: Player e Objetivo -->
+            <div class="column-hero">
+                <div class="card-section">
+                    <h2>Player</h2>
+                    <div id="player-container"></div>
+                </div>
+
+                <div class="card-section">
+                    <h2>Final Objective</h2>
+                    <div id="objective-container"></div>
+                </div>
+            </div>
+
+            <!-- Níveis -->
+            <div class="card-section full-width">
+                <h2>Dungeon Levels</h2>
+                <div id="levels-list" class="grid-list"></div>
+            </div>
+
+            <!-- Inimigos -->
+            <div class="card-section full-width">
+                <h2>Enemies</h2>
+                <div id="enemies-list" class="grid-icons"></div>
+            </div>
+
+            <!-- Armas -->
+            <div class="card-section full-width">
+                <h2>Weapons</h2>
+                <div id="weapons-list" class="grid-icons"></div>
+            </div>
+
+        </div>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+</html>

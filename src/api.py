@@ -12,9 +12,30 @@ from db import (
 )
 from typing import Any, Dict
 from config import model_key
+from fastapi.staticfiles import StaticFiles
+from os.path import join
+from utils import MAIN_PATH
+import logging
 
+logger = logging.getLogger(__name__)
+
+# Configure basic logging to the console (StreamHandler is default)
+logging.basicConfig(
+    level=logging.INFO,  # Set the desired log level (DEBUG, INFO, WARNING, ERROR, CRITICAL)
+    format="%(asctime)s [%(name)s] %(levelname)s: %(message)s",
+    handlers=[
+        logging.StreamHandler()
+    ],  # Explicitly use StreamHandler for console output
+)
 
 app = FastAPI()
+
+# Mount the "static" directory to the "/static" URL path
+app.mount(
+    "/viewer",
+    StaticFiles(directory=join(MAIN_PATH, "public/", "viewer/")),
+    name="viewer",
+)
 
 
 class MapDescription(BaseModel):
@@ -84,3 +105,6 @@ async def route_delete_bundle_data_id(id: int):
         )
     else:
         return Response(content=f"Asset bundle with id {id} was deleted.")
+
+
+logger.info("Access bundle viewer on http://localhost:8000/viewer/index.html")
