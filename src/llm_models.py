@@ -51,7 +51,11 @@ class GroqModels:
 
     OPENAI_GPT_OSS_20B = "openai/gpt-oss-20b"
 
-    LLAMA_3_1_8B_INSTANT = "llama-3.1-8b-instant"
+    # LLAMA_3_1_8B_INSTANT = "llama-3.1-8b-instant"
+
+    META_LLAMA_LLAMA_4_MAVERICK_17B_128E_INSTRUCT = (
+        "meta-llama/llama-4-maverick-17b-128e-instruct"
+    )
 
 
 class NvidiaModels:

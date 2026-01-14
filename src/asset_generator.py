@@ -1,8 +1,9 @@
 from typing import Type, TypeVar
-from pydantic import BaseModel
-from devtools import pprint
-from time import sleep
+from pydantic import BaseModel, ValidationError
 from os.path import join
+from math import floor
+import time
+import json
 
 from langchain.messages import SystemMessage, HumanMessage, AIMessage
 from langchain_core.callbacks import UsageMetadataCallbackHandler
@@ -24,7 +25,7 @@ save_path = join(MAIN_PATH, "saves")
 class AssetsGenerator:
 
     def __init__(self, theme_description) -> None:
-        self.model = get_model(Providers.GROQ, GroqModels.OPENAI_GPT_OSS_120B)
+        self.model = get_model(provider_key, model_key)
         self.usage_callback = UsageMetadataCallbackHandler()
 
         # O prompt agora atua como um "Lead Game Designer" criando a documentação base.
@@ -64,11 +65,43 @@ Do not list specific item stats yet. Focus on the narrative and sensory details 
 
     def _ask_llm_structured(self, schema_class: Type[T], messages: list) -> T:
         structured_llm = self._get_structured_model(schema_class)
-        result = structured_llm.invoke(
-            messages,
-            config={"callbacks": [self.usage_callback]},
-        )
-        return schema_class.model_validate(result)
+
+        last_exception = None
+        max_attempts = 5
+
+        for attempt in range(1, max_attempts + 1):
+            try:
+                # Tenta invocar o modelo
+                result = structured_llm.invoke(
+                    messages,
+                    config={"callbacks": [self.usage_callback]},
+                )
+
+                # Tenta validar o resultado com o Pydantic
+                # Se o result já vier como dict (comum em structured output), o validate converte
+                return schema_class.model_validate(result)
+
+            except (ValidationError, ValueError, TypeError) as e:
+                # Captura erros de validação do Pydantic ou erros de tipo
+                last_exception = e
+                print(
+                    f"Tentativa {attempt}/{max_attempts} falhou ao validar o esquema. Erro: {e}"
+                )
+                # O loop continua para a próxima iteração automaticamente
+            except Exception as e:
+                # Captura outros erros inesperados (ex: erro de conexão com a API)
+                # Se quiser que erros de conexão falhem imediatamente, remova este except
+                last_exception = e
+                print(f"Erro inesperado na tentativa {attempt}: {e}")
+
+        # Se sair do loop, significa que falhou 5 vezes
+        print("Todas as 5 tentativas de gerar o mapa falharam.")
+        if last_exception:
+            raise last_exception
+        else:
+            raise Exception(
+                "Falha desconhecida na geração estruturada após 5 tentativas."
+            )
 
     def generate_player(self) -> Player:
         return self._ask_llm_structured(
@@ -128,7 +161,7 @@ Your task is to generate a progression of {number_of_levels_per_bundle} dungeon 
 "{self.theme_description}"
 
 Guidelines for generation:
-1. **Progression**: The levels must evolve. Depth 1 should be the easier, while Depth {number_of_weapons_per_bundle} is the most dangerous.
+1. **Progression**: The levels must evolve. Depth 1 should be the easier, while Depth {number_of_levels_per_bundle} is the most dangerous.
 2. **Atmosphere**: For each level, describe the environment, lighting, smells, and ambient sounds.
 3. **Cohesion**: Ensure the transition between levels makes logical sense within the theme.
 4. **Variety**: Avoid repeating the exact same descriptions.
@@ -160,6 +193,7 @@ Guidelines:
    - 30% **Rare weapons**: Specialized, high quality, superior craftsmanship, or enchanted.
    - 20% **Legendary weapons**: Artifacts, experimental prototypes, or named weapons with lore and unique properties.
 4. **Descriptions**: Provide vivid descriptions focusing on the weapon's appearance and the specific "feeling" of wielding it.
+5. **Range of Fields**: The fields rarity, weight and mana_cost need to be in the range [0, 10] (inclusive).
 
 Generate the list of {number_of_weapons_per_bundle} weapons now.
 """
@@ -183,6 +217,7 @@ Guidelines:
    - *Tanks*: Slow, high health.
 2. **Variety**: Ensure variety on the thread of the enemies. Should exist 50% enemies with thread 1~5, 30% with thread 5~8 and 20% with thread 9~10
 3. **Visuals**: Describe their appearance to match the gloomy/adventurous tone of the theme.
+4. **Range of Fields**: The fields thread and weight need to be in the range [0, 10] (inclusive). 
 
 Generate the {number_of_enemies_per_bundle} enemies now.
 """
@@ -191,6 +226,8 @@ Generate the {number_of_enemies_per_bundle} enemies now.
         )
 
     def generate_asset_bundle(self) -> AssetBundle:
+        start_time = time.time()
+
         asset_buddle_base = self._ask_llm_structured(
             AssetBundleBase,
             [
@@ -274,6 +311,8 @@ Generate the title now.
             )
         weapons_with_texture = WeaponWithTextureList(items=weapons_with_texture_items)
 
+        total_time = time.time() - start_time
+
         return AssetBundle(
             **asset_buddle_base.model_dump(),
             raw_description=self.raw_theme_description,
@@ -284,6 +323,7 @@ Generate the title now.
             weapons=weapons_with_texture,
             final_objective=final_objective_with_texture,
             usage_metadata=self.usage_callback.usage_metadata,
+            generation_time_seconds=floor(total_time),
         )
 
     @staticmethod
@@ -308,35 +348,71 @@ def load_zombie_souls_asset_bundle() -> AssetBundle:
     )
 
 
-map_description = """
-Create a roguelike with the theme as zombie pos apocalyptic world.
-"""
-
 if __name__ == "__main__":
-    id = find_all_assets_bundles()[0]["id"]
+    model_key = GroqModels.OPENAI_GPT_OSS_120B
+    prompt_index = 0
 
-    asset_buddle = find_bundle_data_by_id(id)
+    asset_generator = AssetsGenerator(prompts[prompt_index])
 
-    if asset_buddle != None:
-        print(asset_buddle.final_objective)
+    asset_bundle: AssetBundle = asset_generator.generate_asset_bundle()
 
-    # asset_generator = AssetsGenerator(map_description)
+    name = f"p_{prompt_index+1}_{model_key.replace("-","_").replace("/","_").lower().strip()}"
 
-    # asset_buddle: AssetBundle = load_zombie_souls_asset_bundle()
+    asset_bundle.name = name
 
-    # save_object_json(
-    #     asset_buddle, join(MAIN_PATH, "saves/", "zombie_asset_bundle.json")
-    # )
-    # pprint(asset_buddle.usage_metadata)
-    # id = insert_asset_bundle(
-    #     asset_buddle.name,
-    #     asset_buddle.description,
-    #     GroqModels.OPENAI_GPT_OSS_120B,
-    #     asset_buddle,
-    # )
+    insert_asset_bundle(asset_bundle, model_key)
 
-    # print(id)
+    asset_bundle_dict = asset_bundle.model_dump()
+    metadata = {}
+    metadata["name"] = asset_bundle_dict["name"]
+    metadata["description"] = asset_bundle_dict["description"]
+    metadata["raw_description"] = asset_bundle_dict["raw_description"]
+    metadata["usage_metadata"] = asset_bundle_dict["usage_metadata"]
+    metadata["generation_time_seconds"] = asset_bundle_dict["generation_time_seconds"]
 
-    # save_object(asset_buddle, join(MAIN_PATH, "saves/", "zombie_asset_bundle.pk"))
+    del asset_bundle_dict["name"]
+    del asset_bundle_dict["description"]
+    del asset_bundle_dict["raw_description"]
+    del asset_bundle_dict["usage_metadata"]
+    del asset_bundle_dict["generation_time_seconds"]
 
-    # pprint(asset_buddle.final_objective.model_dump())
+    with open(
+        join(MAIN_PATH, "tests", f"{name}_assets.json"), "w", encoding="utf-8"
+    ) as file:
+        file.write(json.dumps(asset_bundle_dict))
+
+    with open(
+        join(MAIN_PATH, "tests", f"{name}_metadata.json"), "w", encoding="utf-8"
+    ) as file:
+        file.write(json.dumps(metadata))
+
+    with open(
+        join(MAIN_PATH, "tests", f"{name}_prompt_analyzer.txt"), "w", encoding="utf-8"
+    ) as file:
+        prompt_to_save = f"""
+Por favor, realize a auditoria de coerência para o seguinte par de Descrição e Asset Bundle.
+
+=== DESCRIÇÃO MELHORADA (Narrativa) ===
+{asset_bundle.description}
+
+=== ASSET BUNDLE GERADO (JSON) ===
+{json.dumps(asset_bundle_dict)}
+
+Realize a avaliação agora.
+"""
+        file.write(prompt_to_save)
+
+    with open(
+        join(MAIN_PATH, "tests", f"{name}_prompt_reconstruction.txt"),
+        "w",
+        encoding="utf-8",
+    ) as file:
+        prompt_to_save = f"""
+Please, reconstruct the thematic description based strictly on this Asset Bundle:
+
+=== ASSET BUNDLE (JSON) ===
+{json.dumps(asset_bundle_dict)}
+
+Write the narrative description of the environment represented above (in English).
+"""
+        file.write(prompt_to_save)

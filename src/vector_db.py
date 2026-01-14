@@ -8,6 +8,7 @@ from typing import Literal
 import dotenv
 import os
 import pandas as pd
+import math
 
 dotenv.load_dotenv(join(MAIN_PATH, "..", ".env"))
 
@@ -144,6 +145,31 @@ def create_vector_store(store_type: StoreType):
     print(f"Vector store '{store_type}' criado com sucesso em {db_config['db_path']}")
 
 
+def get_cosine_similarity(text1: str, text2: str) -> float:
+    """
+    Calcula a similaridade cosseno entre duas strings usando o modelo de embedding global.
+    Retorna um valor entre -1 e 1 (geralmente entre 0 e 1 para textos).
+    Quanto maior o valor (mais próximo de 1), maior a similaridade.
+    """
+    vec1 = embeddings.embed_query(text1)
+    vec2 = embeddings.embed_query(text2)
+
+    # Produto escalar
+    dot_product = sum(a * b for a, b in zip(vec1, vec2))
+
+    # Magnitudes (normas)
+    magnitude1 = math.sqrt(sum(a * a for a in vec1))
+    magnitude2 = math.sqrt(sum(b * b for b in vec2))
+
+    # Prevenção de divisão por zero
+    if magnitude1 == 0 or magnitude2 == 0:
+        return 0.0
+
+    similarity = dot_product / (magnitude1 * magnitude2)
+
+    return similarity
+
+
 def query_vector_store(
     query: str, store_type: StoreType, documents_count: int = 4
 ) -> list:
@@ -167,3 +193,7 @@ def query_vector_store(
         tiles.append(tile)
 
     return tiles
+
+
+if __name__ == "__main__":
+    pass

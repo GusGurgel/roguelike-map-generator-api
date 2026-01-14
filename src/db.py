@@ -6,14 +6,11 @@ from models import AssetBundle
 from os.path import join
 from utils import MAIN_PATH
 
-# Define o caminho do banco de dados na raiz do projeto (um nível acima de src/)
 DB_PATH = join(MAIN_PATH, "database.db")
 
 
 def get_db_connection() -> sqlite3.Connection:
-    """Cria e retorna uma conexão com o banco de dados configurada para retornar Rows."""
     conn = sqlite3.connect(DB_PATH)
-    # Permite acessar colunas pelo nome (ex: row['name'])
     conn.row_factory = sqlite3.Row
     return conn
 
@@ -23,6 +20,7 @@ def init_db():
     conn = get_db_connection()
     cursor = conn.cursor()
 
+    # Adicionada a coluna generation_time (REAL para aceitar decimais)
     cursor.execute(
         """
         CREATE TABLE IF NOT EXISTS assets_bundles (
@@ -30,62 +28,72 @@ def init_db():
             name TEXT NOT NULL,
             description TEXT,
             llm_model TEXT,
+            generation_time REAL, 
             create_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
             bundle_data TEXT NOT NULL
         )
     """
     )
-
     conn.commit()
     conn.close()
 
 
-# Garante que a tabela existe ao importar este módulo (opcional, mas útil)
+# Inicializa o DB
 init_db()
+
+# Se você já tem um banco criado anteriormente, descomente a linha abaixo e rode uma vez:
+# migrate_add_generation_time_column()
 
 
 def insert_asset_bundle(
-    name: str, description: str, llm_model: str, bundle_data: AssetBundle
+    asset_bundle: AssetBundle,
+    llm_model: str,
 ) -> int:
     """
-    Insere um novo asset bundle e retorna o id dessa inserção.
+    Insere um novo asset bundle.
     """
     conn = get_db_connection()
     cursor = conn.cursor()
 
-    # Serializa o modelo Pydantic para JSON string
-    # Nota: Em Pydantic v2 usa-se model_dump_json(), na v1 usa-se .json()
-    json_data = bundle_data.model_dump_json()
+    json_data = asset_bundle.model_dump_json()
     created_at = datetime.now().isoformat()
 
+    # Atualizado o SQL para incluir generation_time
     cursor.execute(
         """
-        INSERT INTO assets_bundles (name, description, llm_model, create_at, bundle_data)
-        VALUES (?, ?, ?, ?, ?)
+        INSERT INTO assets_bundles (name, description, llm_model, generation_time, create_at, bundle_data)
+        VALUES (?, ?, ?, ?, ?, ?)
         """,
-        (name, description, llm_model, created_at, json_data),
+        (
+            asset_bundle.name,
+            asset_bundle.description,
+            llm_model,
+            asset_bundle.generation_time_seconds,
+            created_at,
+            json_data,
+        ),
     )
 
     conn.commit()
     new_id = cursor.lastrowid
     conn.close()
 
-    return new_id if new_id != None else -1
+    return new_id if new_id is not None else -1
 
 
 def find_all_assets_bundles() -> List[Dict[str, Any]]:
     """
-    Retorna todos os asset bundles como uma lista de dicionários.
+    Retorna todos os asset bundles.
     """
     conn = get_db_connection()
     cursor = conn.cursor()
 
+    # Adicionado generation_time no SELECT
     cursor.execute(
-        "SELECT id, name, llm_model, create_at FROM assets_bundles ORDER BY create_at DESC"
+        "SELECT id, name, llm_model, generation_time, create_at FROM assets_bundles ORDER BY create_at DESC"
     )
     rows = cursor.fetchall()
 
-    # Converte sqlite3.Row para dict para facilitar o uso na API
     result = [dict(row) for row in rows]
 
     conn.close()
@@ -93,10 +101,7 @@ def find_all_assets_bundles() -> List[Dict[str, Any]]:
 
 
 def find_bundle_data_by_id(id: int) -> Optional[AssetBundle]:
-    """
-    Retorna o bundle_data de um asset bundle usando o id, já convertido para o objeto Pydantic.
-    Retorna None se não encontrar.
-    """
+    """Retorna o bundle_data de um asset bundle."""
     conn = get_db_connection()
     cursor = conn.cursor()
 
@@ -111,7 +116,6 @@ def find_bundle_data_by_id(id: int) -> Optional[AssetBundle]:
     json_str = row["bundle_data"]
 
     try:
-        # Reconstrói o objeto Pydantic a partir da string JSON
         return AssetBundle.model_validate_json(json_str)
     except Exception as e:
         print(f"Erro ao deserializar bundle_data para id {id}: {e}")
@@ -119,9 +123,7 @@ def find_bundle_data_by_id(id: int) -> Optional[AssetBundle]:
 
 
 def delete_asset_bundle_by_id(id: int) -> bool:
-    """
-    Deleta um asset bundle pelo id e retorna True se ele foi deletado, False caso contrário.
-    """
+    """Deleta um asset bundle pelo id."""
     conn = get_db_connection()
     cursor = conn.cursor()
 

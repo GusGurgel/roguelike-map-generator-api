@@ -8,8 +8,10 @@ from db import (
     find_all_assets_bundles,
     find_bundle_data_by_id,
     delete_asset_bundle_by_id,
+    insert_asset_bundle,
 )
 from typing import Any, Dict
+from config import model_key
 
 
 app = FastAPI()
@@ -26,6 +28,11 @@ async def route_post_asset_bundle(map_description: MapDescription) -> AssetBundl
             map_description.map_description
         )
         asset_bundle: AssetBundle = asset_generator.generate_asset_bundle()
+
+        insert_asset_bundle(
+            asset_bundle,
+            model_key,
+        )
         return asset_bundle
     except:
         raise HTTPException(status_code=500, detail="Internal Server Error.")
@@ -46,6 +53,25 @@ async def route_find_bundle_data_id(id: int) -> AssetBundle:
         )
 
     return asset_bundle
+
+
+@app.get("/raw/asset-bundle/{id}")
+async def route_find_raw_bundle_data_id(id: int) -> dict:
+    asset_bundle = find_bundle_data_by_id(id)
+
+    if asset_bundle == None:
+        raise HTTPException(
+            status_code=404, detail=f"Asset bundle with id {id} no found."
+        )
+
+    json = asset_bundle.model_dump()
+    del json["name"]
+    del json["description"]
+    del json["raw_description"]
+    del json["usage_metadata"]
+    del json["generation_time_seconds"]
+
+    return json
 
 
 @app.delete("/asset-bundle/{id}")
